@@ -35,8 +35,7 @@ class Dashboard extends Component {
                             <h4>
                                 <b>Hey there,</b> {user.name.split(" ")[0]}
                                 <p className="flow-text grey-text text-darken-1">
-                                    You are logged into a full-stack{" "}
-                                    <span style={{fontFamily: "monospace"}}>MERN</span> app 👏
+                                    <img src={'https://c.tenor.com/04WNM3F6Rv8AAAAM/party-hard-the-simpsons.gif'} />
                                 </p>
                             </h4>
                         </div>
