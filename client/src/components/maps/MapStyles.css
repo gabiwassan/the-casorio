@@ -1,7 +1,5 @@
 .google-map-code {
-    display: block;
     position: relative;
-    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -15,7 +13,7 @@
     }
 }
 
-.responsive-iframe{
+.responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,4 +21,11 @@
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+.text{
+}
+
+.gradient{
+    background: linear-gradient(to top, white, grey)
 }

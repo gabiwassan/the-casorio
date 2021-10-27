@@ -17,80 +17,82 @@ const Assert = require("assert");
 // @desc Register user
 // @access Public
 router.post("/register", (req, res) => {
-    // Form validation
+  // Form validation
 
-    const {errors, isValid} = validateRegisterInput(req.body);
+  const {errors, isValid} = validateRegisterInput(req.body);
 
-    // Check validation
-    if (!isValid) {
-        return res.status(400).json(errors);
-    }
+  // Check validation
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
 
-    User.findOne({phone: req.body.phone}).then(user => {
-        const newUser = new User({
-            name: req.body.name,
-            group: req.body.group,
-            phone: req.body.phone
-        });
-        newUser
-            .save()
-            .then(user => res.json(user))
-            .catch(err => console.log(err));
+  User.findOne({phone: req.body.phone}).then(user => {
+    const newUser = new User({
+      name: req.body.name,
+      group: req.body.group,
+      phone: req.body.phone,
+      card: req.body.card
     });
+    newUser
+      .save()
+      .then(user => res.json(user))
+      .catch(err => console.log(err));
+  });
 });
 
 // @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
 router.post("/login", (req, res) => {
-    // Form validation
+  // Form validation
 
-    const {errors, isValid} = validateLoginInput(req.body);
+  const {errors, isValid} = validateLoginInput(req.body);
 
-    // Check validation
-    if (!isValid) {
-        return res.status(400).json(errors);
+  // Check validation
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
+  const phone = req.body.phone;
+
+  // Find user by phone
+  User.findOne({phone}).then(user => {
+    // Check if user exists
+    if (!user) {
+      return res.status(404).json({groupNotFound: "Phone not found"});
     }
 
-    const group = req.body.group;
-    const phone = req.body.phone;
+    // Check phone
+    if (phone === user.phone) {
+      // User matched
+      // Create JWT Payload
+      const payload = {
+        id: user.id,
+        name: user.name,
+        group: user.group,
+        card: user.card
+      };
 
-    // Find user by phone
-    User.findOne({phone}).then(user => {
-        // Check if user exists
-        if (!user) {
-            return res.status(404).json({groupNotFound: "Phone not found"});
+      // Sign token
+      jwt.sign(
+        payload,
+        keys.secretOrKey,
+        {
+          expiresIn: 31556926 // 1 year in seconds
+        },
+        (err, token) => {
+          res.json({
+            success: true,
+            token: "Bearer " + token
+          });
         }
-
-        // Check phone
-        if (phone === user.phone) {
-            // User matched
-            // Create JWT Payload
-            const payload = {
-                id: user.id,
-                name: user.name
-            };
-
-            // Sign token
-            jwt.sign(
-                payload,
-                keys.secretOrKey,
-                {
-                    expiresIn: 31556926 // 1 year in seconds
-                },
-                (err, token) => {
-                    res.json({
-                        success: true,
-                        token: "Bearer " + token
-                    });
-                }
-            );
-        } else {
-            return res
-                .status(400)
-                .json({phoneIncorrect: "phone incorrect"});
-        }
-    });
+      );
+    } else {
+      return res
+        .status(400)
+        .json({phoneIncorrect: "phone incorrect"});
+    }
+  });
 });
 
 module.exports = router;

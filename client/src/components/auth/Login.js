@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import {loginUser} from "../../actions/authActions";
 import classnames from "classnames";
-import {NoPhoneError, QueLeDoyError} from "../layout/LoginError";
+import {NoPhoneError, QueLeDoyError} from "./LoginError";
+import './Login.css'
+import ImageFooter from "../layout/ImageFooter";
+import {WeatherWidget} from "../dashboard/WeatherWidget";
 
 //This should be in landing
 
@@ -60,12 +63,15 @@ class Login extends Component {
 
     return (
       <div className="container">
-        <div style={{marginTop: "4rem"}} className="row">
+        <div className="row">
           <div className="col s12">
-            <div className="col s12" style={{paddingLeft: "11.250px"}}>
-              <h4>
-                <b>Ingresa</b> tu teléfono.
-              </h4>
+            <div className="col s12">
+              <h3>
+                Toda <b>gran aventura</b> empieza con un <b>Si Quiero</b>.
+              </h3>
+              <h5>
+                <b>Ingresa</b> tu teléfono:
+              </h5>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12">
@@ -87,30 +93,26 @@ class Login extends Component {
                   {errors.phoneIncorrect}
                 </span>
               </div>
-              <div className="col s12" style={{paddingLeft: "11.250px",}}>
+              <div className="error-image">
+              {errors.phone ?
+                <NoPhoneError/> : <></>}
+              {errors.groupNotFound ?
+                <QueLeDoyError/> : <></>}
+              </div>
+              <div className="col s12">
                 Sin el 0 y sin el 15. Ej: 3513079896
               </div>
-              <div className="col s12" style={{paddingLeft: "11.250px"}}>
+              <div className="col s12">
                 <button
-                  style={{
-                    width: "150px",
-                    borderRadius: "3px",
-                    letterSpacing: "1.5px",
-                    marginTop: "1rem"
-                  }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable"
-                >
+                  className="btn btn-large waves-effect waves-light white black-text hoverable">
                   Ingresar
                 </button>
               </div>
             </form>
           </div>
         </div>
-        {errors.phone ?
-          <NoPhoneError/> : <></>}
-        {errors.groupNotFound ?
-          <QueLeDoyError/> : <></>}
+        <ImageFooter/>
       </div>
     );
   }
