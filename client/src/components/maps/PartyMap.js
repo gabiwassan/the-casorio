@@ -14,7 +14,7 @@ class PartyMap extends Component {
               El Salon es <b>Mansueto 1912</b> en <b>Saldan</b>.
             </h5>
             <h6 className='text center'>
-              Despues de la <b>iglesia</b> nos vamos al salon a partir de las <b>18hs</b>, y ahi empieza la <b>joda</b>.
+              Despues de la <b>iglesia</b> nos vamos al salon a partir de las <b>18hs</b>, a las <b>19:30hs</b> nos casamos por <b>civil</b>  y ahi empieza la <b>joda</b>.
             </h6>
             <div className='google-map-code'>
               <iframe title='party-map' className='responsive-iframe'
