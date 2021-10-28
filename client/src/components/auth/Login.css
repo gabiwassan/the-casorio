@@ -1,18 +1,23 @@
-.error-image{
+.error-image {
     padding-left: 11px;
+    width: 100%;
 }
 
-.row{
-    margin-top: 4rem;
-}
-
-.s12{
-    padding-left: 11px
-}
-
-.btn-large{
+.btn-large {
+    font-family: 'Cinzel Decorative', cursive;
+    color: black;
     width: 150px;
-    border-radius: 3px;
+    border-radius: 5px;
+    right: 10%;
     letter-spacing: 2px;
     margin-top: 1rem;
+}
+
+.footer-image{
+    position: center;
+    width: 100%;
+}
+
+.welcome-text{
+    font-family: 'Cinzel Decorative', cursive;
 }

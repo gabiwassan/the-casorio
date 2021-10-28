@@ -1,10 +1,9 @@
-.header-text{
-    font-family: monospace;
-    font-size: xx-large;
+.header-text {
+    font-family: 'Italianno', cursive;
     position: absolute;
     right: 1%;
     left: 1%;
-    top: 13%;
+    top: 60px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -19,10 +18,10 @@
     }
 }
 
-.header-image{
+.header-image {
     width: 100%;
 }
 
-.footer-image{
+.footer-image {
     width: 100%;
 }

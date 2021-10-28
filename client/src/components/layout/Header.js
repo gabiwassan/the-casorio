@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 import './Layout.css';
 import header from './arriba ancho.png'
 
@@ -6,14 +6,14 @@ import header from './arriba ancho.png'
 class Header extends Component {
   render() {
     return (
-      <div className="z-depth-0 brand-logo">
-        <div className="nav-wrapper white">
+      <div className='z-depth-0 brand-logo'>
+        <div className='nav-wrapper white'>
           <div>
-            <img className="header-image" src={header} alt="header-image"/>
-            <div className="center black-text header-text">
-              <h3>
+            <img className='header-image' src={header} alt='Header'/>
+            <div className='center black-text header-text'>
+              <h1>
                 Micka & Mauro
-              </h3>
+              </h1>
             </div>
           </div>
         </div>

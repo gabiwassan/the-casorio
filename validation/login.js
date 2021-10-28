@@ -1,12 +1,12 @@
-const Validator = require("validator");
-const isEmpty = require("is-empty");
+const Validator = require('validator');
+const isEmpty = require('is-empty');
 
 module.exports = function validateLoginInput(data) {
   let errors = {};
 
   // Convert empty fields to an empty string so we can use validator functions
   // data.email = !isEmpty(data.email) ? data.email : "";
-  data.phone = !isEmpty(data.phone) ? data.phone : "";
+  data.phone = !isEmpty(data.phone) ? data.phone : '';
 
   // Email checks
   // if (Validator.isEmpty(data.email)) {
@@ -14,7 +14,7 @@ module.exports = function validateLoginInput(data) {
   // }
   // phone checks
   if (Validator.isEmpty(data.phone)) {
-    errors.phone = "El teléfono es requerido";
+    errors.phone = 'El teléfono es requerido';
   }
 
   return {

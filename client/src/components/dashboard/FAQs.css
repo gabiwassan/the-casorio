@@ -1,7 +1,11 @@
-.FAQ-text{
+.FAQ{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+}
+.FAQ-text {
     padding-left: 20px;
 }
 
-.FAQ-answer{
+.FAQ-answer {
     text-indent: 20px;
 }

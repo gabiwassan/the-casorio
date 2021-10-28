@@ -1,23 +1,21 @@
-import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import jwt_decode from "jwt-decode";
-import setAuthToken from "./utils/setAuthToken";
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import jwt_decode from 'jwt-decode';
+import setAuthToken from './utils/setAuthToken';
 
-import {setCurrentUser, logoutUser} from "./actions/authActions";
-import {Provider} from "react-redux";
-import store from "./store";
+import {logoutUser, setCurrentUser} from './actions/authActions';
+import {Provider} from 'react-redux';
+import store from './store';
 
-import Header from "./components/layout/Header";
-import ImageFooter from "./components/layout/ImageFooter"
-import Login from "./components/auth/Login";
-import PrivateRoute from "./components/private-route/PrivateRoute";
-import Dashboard from "./components/dashboard/Dashboard";
-import {ChurchMap} from "./components/maps/ChurchMap";
-import {PartyMap} from "./components/maps/PartyMap";
+import Header from './components/layout/Header';
+import Login from './components/auth/Login';
+import PrivateRoute from './components/private-route/PrivateRoute';
+import Dashboard from './components/dashboard/Dashboard';
+import {ChurchMap} from './components/maps/ChurchMap';
+import {PartyMap} from './components/maps/PartyMap';
 
-import "./App.css";
-import Register from "./components/auth/Register";
-import {WeatherWidget} from "./components/dashboard/WeatherWidget";
+import './App.css';
+import Register from './components/auth/Register';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -35,7 +33,7 @@ if (localStorage.jwtToken) {
     store.dispatch(logoutUser());
 
     // Redirect to login
-    window.location.href = "./login";
+    window.location.href = './';
   }
 }
 
@@ -44,14 +42,14 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
+          <div className='App'>
             <Header/>
-            <Route exact path="/" component={Login}/>
-            <Route exact path="/register" component={Register}/>
+            <Route exact path='/' component={Login}/>
+            <Route exact path='/register' component={Register}/>
             <Switch>
-              <PrivateRoute exact path="/dashboard" component={Dashboard}/>
-              <PrivateRoute exact path="/dashboard/church" component={ChurchMap}/>
-              <PrivateRoute exact path="/dashboard/party" component={PartyMap}/>
+              <PrivateRoute exact path='/dashboard' component={Dashboard}/>
+              <PrivateRoute exact path='/dashboard/church' component={ChurchMap}/>
+              <PrivateRoute exact path='/dashboard/party' component={PartyMap}/>
             </Switch>
           </div>
         </Router>

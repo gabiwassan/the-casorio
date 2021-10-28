@@ -1,22 +1,22 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const jwt = require("jsonwebtoken");
-const keys = require("../../config/keys");
-const passport = require("passport");
+const jwt = require('jsonwebtoken');
+const keys = require('../../config/keys');
+const passport = require('passport');
 
 // Load input validation
-const validateRegisterInput = require("../../validation/register");
-const validateLoginInput = require("../../validation/login");
+const validateRegisterInput = require('../../validation/register');
+const validateLoginInput = require('../../validation/login');
 
 // Load User model
-const User = require("../../models/User");
-const assert = require("assert");
-const Assert = require("assert");
+const User = require('../../models/User');
+const assert = require('assert');
+const Assert = require('assert');
 
 // @route POST api/users/register
 // @desc Register user
 // @access Public
-router.post("/register", (req, res) => {
+router.post('/register', (req, res) => {
   // Form validation
 
   const {errors, isValid} = validateRegisterInput(req.body);
@@ -43,7 +43,7 @@ router.post("/register", (req, res) => {
 // @route POST api/users/login
 // @desc Login user and return JWT token
 // @access Public
-router.post("/login", (req, res) => {
+router.post('/login', (req, res) => {
   // Form validation
 
   const {errors, isValid} = validateLoginInput(req.body);
@@ -59,7 +59,7 @@ router.post("/login", (req, res) => {
   User.findOne({phone}).then(user => {
     // Check if user exists
     if (!user) {
-      return res.status(404).json({groupNotFound: "Phone not found"});
+      return res.status(404).json({groupNotFound: 'Phone not found'});
     }
 
     // Check phone
@@ -83,14 +83,14 @@ router.post("/login", (req, res) => {
         (err, token) => {
           res.json({
             success: true,
-            token: "Bearer " + token
+            token: 'Bearer ' + token
           });
         }
       );
     } else {
       return res
         .status(400)
-        .json({phoneIncorrect: "phone incorrect"});
+        .json({phoneIncorrect: 'phone incorrect'});
     }
   });
 });

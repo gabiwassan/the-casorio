@@ -23,9 +23,25 @@
     height: 100%;
 }
 
-.text{
+.text {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Cinzel Decorative', cursive;
 }
 
-.gradient{
+.gradient {
     background: linear-gradient(to top, white, grey)
+}
+
+.header-navigation{
+    right: 1%;
+    left: 1%;
+    top: 170px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+}
+
+.map-body{
+    position: absolute;
+    top: 250px;
 }

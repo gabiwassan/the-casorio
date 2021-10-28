@@ -1,0 +1,16 @@
+.weather-text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-navigation{
+    position: absolute;
+    right: 1%;
+    left: 1%;
+    top: 170px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.home-text{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
