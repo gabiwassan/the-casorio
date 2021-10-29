@@ -6,13 +6,6 @@
     padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-@media only screen and (min-width: 1000px) {
-    .google-map-code {
-        width: 70%;
-        padding-top: 50%;
-    }
-}
-
 .responsive-iframe {
     position: absolute;
     top: 0;

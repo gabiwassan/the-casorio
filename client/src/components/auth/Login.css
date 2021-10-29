@@ -1,23 +1,70 @@
 .error-image {
-    padding-left: 11px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 100%;
 }
 
 .btn-large {
-    font-family: 'Cinzel Decorative', cursive;
-    color: black;
-    width: 150px;
-    border-radius: 5px;
-    right: 10%;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: #BA9F63;
+    width: 100%;
+    border-radius: 24px;
     letter-spacing: 2px;
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
-.footer-image{
+.btn-large:hover {
+    background-color: white;
+    color: #BA9F63;
+}
+
+.input-field {
+}
+
+.input-field input[type=tel]:focus + label {
+    color: #ba9f63 !important;
+}
+
+.input-field .prefix.active {
+    color: #ba9f63 !important;
+}
+
+.input-field input[type=tel]:focus {
+    border-bottom: 1px solid #ba9f63 !important;
+    box-shadow: 0 1px 0 0 #ba9f63 !important;
+    color: black;
+}
+
+#phone {
+    width: 80%;
+}
+
+.footer-image {
     position: center;
     width: 100%;
 }
 
-.welcome-text{
-    font-family: 'Cinzel Decorative', cursive;
+.welcome-text {
+    font-family: 'Merriweather', serif;
+    right: 12px;
+    left: 12px;
+}
+
+.vertical-space {
+    height: 5vh;
+}
+
+.instructions {
+    font-family: 'Lato', sans-serif;
+    display: block;
+}
+
+.red-text {
+    display: block;
 }

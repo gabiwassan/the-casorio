@@ -21,7 +21,7 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <div className='container center' style={{display: 'table'}}>
+        <div className='container-fluid center' style={{display: 'table'}}>
           <div className='header-navigation'>
           <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
             <i className='material-icons left'>keyboard_backspace </i>Salir
@@ -36,7 +36,7 @@ class Dashboard extends Component {
         </div>
         <div style={{height: '60vh'}} className='container valign-wrapper'>
           <div className='row'>
-            <div className='home-text col s12 center-align'>
+            <div className='home-text col-s12 center-align'>
               <h4>
                 Hola, <b> {user.group}</b>!
                 <p className='flow-text grey-text text-darken-1'>

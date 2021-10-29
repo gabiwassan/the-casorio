@@ -61,18 +61,24 @@ class Login extends Component {
     const {errors} = this.state;
 
     return (
-      <div>
-        <div className='container'>
-            <div className='welcome-text col s12'>
-              <h3>
-                Toda <b>gran aventura</b> empieza con un <b>Si Quiero</b>.
-              </h3>
-              <h5>
-                <b>Ingresa</b> tu teléfono:
-              </h5>
-            </div>
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='vertical-space'>
+          </div>
+          <h5 className='col-12 welcome-text center'>
+            Toda <b>gran aventura</b> empieza con un
+          </h5>
+          <h5 className='col-12 welcome-text center'>
+            “Si, quiero”.
+          </h5>
+          <div className='vertical-space'>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-s10'>
             <form noValidate onSubmit={this.onSubmit}>
-              <div className='input-field col s12'>
+              <div className='input-field col-s10 offset-1'>
+                {/*<i className="material-icons prefix">phone</i>*/}
                 <input
                   onChange={this.onChange}
                   value={this.state.phone}
@@ -85,33 +91,36 @@ class Login extends Component {
                     invalid: errors.phone || errors.phoneIncorrect
                   })}
                 />
-                <label htmlFor='phone'>Teléfono</label>
+                <label htmlFor='phone'>INGRESA TU TELÉFONO:</label>
                 <span className='red-text'>
                   {errors.phone}
                   {errors.phoneIncorrect}
                 </span>
               </div>
-              <div className='error-image'>
+              <div className='row error-image'>
                 {errors.phone ?
                   <NoPhoneError/> : <></>}
                 {errors.groupNotFound ?
                   <QueLeDoyError/> : <></>}
               </div>
-              <div className='col s12'>
-                Sin el 0 y sin el 15. Ej: 3513079896
-              </div>
-              <div className='col s12'>
+              <span className='instructions col-12 offset-1'>
+              Sin el 0 y sin el 15. Ej: 3513079896
+            </span>
+              <div className='row'>
+                <div className='col-8 offset-2'>
                 <button
                   type='submit'
-                  className='right btn-large waves-effect waves-light white hoverable'>
+                  className='right btn-large waves-effect'>
                   Ingresar
                 </button>
+                </div>
               </div>
             </form>
+          </div>
         </div>
         <ImageFooter/>
       </div>
-    );
+    )
   }
 }
 

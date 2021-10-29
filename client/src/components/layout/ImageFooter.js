@@ -5,12 +5,8 @@ import './Layout.css';
 class ImageFooter extends Component {
   render() {
     return (
-      <div className='z-depth-0'>
-        <div className='nav-wrapper white'>
-          <div>
-            <img className='footer-image' src={footer} alt='footer'/>
-          </div>
-        </div>
+      <div className='col-s12'>
+        <img className='footer-image' src={footer} alt='footer'/>
       </div>
     );
   }

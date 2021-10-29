@@ -6,18 +6,14 @@ import header from './arriba ancho.png'
 class Header extends Component {
   render() {
     return (
-      <div className='z-depth-0 brand-logo'>
-        <div className='nav-wrapper white'>
-          <div>
-            <img className='header-image' src={header} alt='Header'/>
-            <div className='center black-text header-text'>
-              <h1>
+        <div>
+            <img className='col-s12 header-image' src={header} alt='Header'/>
+            <div className='col-s12'>
+              <h2 className='header-text center'>
                 Micka & Mauro
-              </h1>
-            </div>
+              </h2>
           </div>
         </div>
-      </div>
     );
   }
 }

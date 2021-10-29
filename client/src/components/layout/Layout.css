@@ -1,21 +1,8 @@
 .header-text {
-    font-family: 'Italianno', cursive;
-    position: absolute;
-    right: 1%;
-    left: 1%;
-    top: 60px;
-}
-
-@media only screen and (min-width: 1000px) {
-    .header-text {
-        top: 300px
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .header-text {
-        top: 400px
-    }
+    font-family: 'Merriweather', serif;
+    color: #BA9F63;
+    right: 2%;
+    left: 2%;
 }
 
 .header-image {
