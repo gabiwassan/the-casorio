@@ -22,6 +22,11 @@ const UserSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
+  },
+  family: {
+    type: Boolean,
+    required: true,
+    default: false,
   }
 });
 

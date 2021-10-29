@@ -7,6 +7,7 @@ import {FAQs} from './FAQs';
 import {WeatherWidget} from './WeatherWidget';
 import ImageFooter from '../layout/ImageFooter';
 import './Dashboard.css'
+import {FamilyGroup} from "../layout/FamilyGroup/FamilyGroup";
 
 //this is the invitation card
 
@@ -23,16 +24,16 @@ class Dashboard extends Component {
       <div>
         <div className='container-fluid center' style={{display: 'table'}}>
           <div className='header-navigation'>
-          <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
-            <i className='material-icons left'>keyboard_backspace </i>Salir
-          </Link>
-          <Link to='/dashboard/church' className='col s4 btn-flat waves-effect'>
-            <i className='material-icons left'>church</i> Iglesia
-          </Link>
-          <Link to='/dashboard/party' className='col s4 btn-flat waves-effect'>
-            <i className='material-icons left'>celebration</i> Salón
-          </Link>
-        </div>
+            <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
+              <i className='material-icons left'>keyboard_backspace </i>Salir
+            </Link>
+            <Link to='/dashboard/church' className='col s4 btn-flat waves-effect'>
+              <i className='material-icons left'>church</i> Iglesia
+            </Link>
+            <Link to='/dashboard/party' className='col s4 btn-flat waves-effect'>
+              <i className='material-icons left'>celebration</i> Salón
+            </Link>
+          </div>
         </div>
         <div style={{height: '60vh'}} className='container valign-wrapper'>
           <div className='row'>
@@ -42,10 +43,7 @@ class Dashboard extends Component {
                 <p className='flow-text grey-text text-darken-1'>
                 </p>
               </h4>
-              <h5>
-                <b>Ustedes</b> de alguna forma, han sido parte de esta <b>hermosa historia de amor</b>, y nos encantaría que
-                nos acompañen en este día tan especial.
-              </h5>
+              <FamilyGroup user={user} />
               <div>
               </div>
               <h5>
