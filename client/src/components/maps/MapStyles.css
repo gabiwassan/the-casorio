@@ -26,7 +26,7 @@
     background: linear-gradient(to top, white, grey)
 }
 
-.header-navigation{
+.header-navigation {
     right: 1%;
     left: 1%;
     top: 170px;
@@ -34,11 +34,11 @@
     font-weight: bold;
 }
 
-.map-body{
+.map-body {
     position: absolute;
     top: 250px;
 }
 
-.footer-image{
+.footer-image {
     bottom: 0;
 }

@@ -1,16 +1,15 @@
-.weather-text{
+.weather-text {
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
-.header-navigation{
-    position: absolute;
-    right: 1%;
-    left: 1%;
-    top: 170px;
-    font-family: 'Cinzel Decorative', cursive;
+.home-text {
+    font-family: 'Merriweather', serif;
 }
 
-.home-text{
-    font-family: 'Zen Maru Gothic', sans-serif;
+.btn-flat{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }

@@ -22,40 +22,48 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <div className='container-fluid center' style={{display: 'table'}}>
-          <div className='header-navigation'>
-            <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
-              <i className='material-icons left'>keyboard_backspace </i>Salir
-            </Link>
-            <Link to='/dashboard/church' className='col s4 btn-flat waves-effect'>
-              <i className='material-icons left'>church</i> Iglesia
-            </Link>
-            <Link to='/dashboard/party' className='col s4 btn-flat waves-effect'>
-              <i className='material-icons left'>celebration</i> Salón
-            </Link>
+        <div className='container-fluid'>
+          <div className='row header-space'/>
+          <div className='row center'>
+            <div className='col s4'>
+              <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
+                <i className='material-icons left'>keyboard_backspace</i>Salir</Link>
+            </div>
+            <div className='col s4'>
+              <Link to='/dashboard/church' className='btn-flat waves-effect'>
+                <i className='material-icons left'>church</i> Iglesia</Link>
+            </div>
+            <div className='col s4'>
+              <Link to='/dashboard/party' className='btn-flat waves-effect'>
+                <i className='material-icons left'>celebration</i>Salón</Link>
+            </div>
           </div>
         </div>
         <div style={{height: '60vh'}} className='container valign-wrapper'>
-          <div className='row'>
-            <div className='home-text col s12 center-align'>
-              <h4>
-                Hola, <b> {user.group}</b>!
-                <p className='flow-text grey-text text-darken-1'>
-                </p>
-              </h4>
-              <FamilyGroup user={user} />
+          <div className='row center-align'>
+            <div className='home-text col s12'>
               <div>
+                <h4>
+                  Hola, <b>{user.group}</b>!
+                </h4>
               </div>
-              <h5>
-                <i className='material-icons'>credit_card </i> ${user.card} por persona.
-              </h5>
+              <div className='row'>
+                <div className='col s10 offset-s1'>
+                  <FamilyGroup user={user}/>
+                </div>
+              </div>
+              <div className='row'>
+                <h5>
+                  <i className='material-icons'>credit_card </i> ${user.card} por persona.
+                </h5>
+              </div>
             </div>
           </div>
         </div>
         <FAQs/>
         <ImageFooter/>
         <h5 className="weather-text center">
-          Aca te dejamos el pronostico para que planees tu outfit.
+          <b>Aca te dejamos el pronostico para que planees tu outfit.</b>
           <i className='material-icons left'>arrow_downward </i>
           <i className='material-icons right'>arrow_downward </i>
         </h5>

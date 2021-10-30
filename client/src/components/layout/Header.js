@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './Layout.css';
-import header from '../../arriba ancho.png'
 
 //this is the header
 class Header extends Component {
