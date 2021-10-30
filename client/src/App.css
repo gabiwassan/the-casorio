@@ -7,3 +7,16 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+.col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-image {
+    background-image: url("arriba ancho.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+}

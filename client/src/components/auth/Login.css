@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.btn-large {
+.btn {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     display: flex;
@@ -16,15 +16,21 @@
     border-radius: 24px;
     letter-spacing: 2px;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
-.btn-large:hover {
+.btn:hover {
     background-color: white;
     color: #BA9F63;
 }
 
-.input-field {
+.btn:focus {
+    background-color: white;
+    color: #BA9F63;
+}
+
+.input-field{
+    margin-bottom: 0px;
 }
 
 .input-field input[type=tel]:focus + label {
@@ -41,7 +47,6 @@
     color: black;
 }
 
-
 .footer-image {
     position: center;
     width: 100%;
@@ -49,19 +54,76 @@
 
 .welcome-text {
     font-family: 'Merriweather', serif;
+    font-size: 20px;
     right: 12px;
     left: 12px;
 }
 
 .vertical-space {
-    height: 5vh;
+    height: 3rem;
 }
 
 .instructions {
     font-family: 'Lato', sans-serif;
-    display: block;
+    padding-left: 10px;
 }
 
 .red-text {
     display: block;
+}
+
+.header-text {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    display: grid;
+    align-content: end;
+    color: #BA9F63;
+    right: 2%;
+    left: 2%;
+    font-size: 36px;
+    line-height: 18rem;
+}
+
+.header-space {
+    height: 18rem;
+}
+
+@media (max-width: 1000px) {
+    .header-text {
+        line-height: 15rem;
+    }
+
+    .header-space {
+        height: 15rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-text {
+        line-height: 12rem;
+    }
+
+    .header-space {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-text {
+        line-height: 10rem;
+    }
+
+    .header-space {
+        height: 10rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-text {
+        line-height: 7rem;
+    }
+
+    .header-space {
+        height: 7rem;
+    }
 }

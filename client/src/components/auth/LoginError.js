@@ -16,7 +16,7 @@ export const QueLeDoyError = () => {
 export const NoPhoneError = () => {
   return (
     <div className='row'>
-      <div className='col-6 offset-1'>
+      <div className='col-6 offset-2'>
         <img className='error-image' src='https://c.tenor.com/ampW8g8v-vMAAAAd/hack-khaby.gif' alt='really?'/>
       </div>
     </div>

@@ -60,7 +60,7 @@ class Register extends Component {
               <i className='material-icons left'>keyboard_backspace</i> Back to
               home
             </Link>
-            <div className='col-s12'>
+            <div className='col s12'>
               <h4>
                 <b>Register</b> below
               </h4>
@@ -69,7 +69,7 @@ class Register extends Component {
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
-              <div className='input-field col-s12'>
+              <div className='input-field col s12'>
                 <input
                   onChange={this.onChange}
                   value={this.state.name}
@@ -83,7 +83,7 @@ class Register extends Component {
                 <label htmlFor='name'>Name</label>
                 <span className='red-text'>{errors.name}</span>
               </div>
-              <div className='input-field col-s12'>
+              <div className='input-field col s12'>
                 <input
                   onChange={this.onChange}
                   value={this.state.group}
@@ -97,7 +97,7 @@ class Register extends Component {
                 <label htmlFor='group'>group</label>
                 <span className='red-text'>{errors.group}</span>
               </div>
-              <div className='input-field col-s12'>
+              <div className='input-field col s12'>
                 <input
                   onChange={this.onChange}
                   value={this.state.phone}
@@ -111,7 +111,7 @@ class Register extends Component {
                 <label htmlFor='phone'>phone</label>
                 <span className='red-text'>{errors.phone}</span>
               </div>
-              <div className='input-field col-s12'>
+              <div className='input-field col s12'>
                 <input
                   onChange={this.onChange}
                   value={this.state.card}
@@ -125,7 +125,7 @@ class Register extends Component {
                 <label htmlFor='card'>Valor de la Tarjeta</label>
                 <span className='red-text'>{errors.card}</span>
               </div>
-              <div className='col-s12'>
+              <div className='col s12'>
                 <button
                   style={{
                     width: '150px',

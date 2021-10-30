@@ -43,8 +43,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className='App'>
-            <Header/>
+          <div className='App header-image'>
             <Route exact path='/' component={Login}/>
             <Route exact path='/register' component={Register}/>
             <Switch>

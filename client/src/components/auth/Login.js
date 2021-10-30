@@ -62,22 +62,30 @@ class Login extends Component {
 
     return (
       <div className='container-fluid'>
-        <div className='row'>
-          <div className='vertical-space'>
-          </div>
-          <h5 className='col-12 welcome-text center'>
-            Toda <b>gran aventura</b> empieza con un
-          </h5>
-          <h5 className='col-12 welcome-text center'>
-            “Si, quiero”.
-          </h5>
-          <div className='vertical-space'>
-          </div>
+        <div className='row header-space'/>
+        <div className='col-s12'>
+          <h1 className='header-text'>
+            Micka & Mauro
+          </h1>
         </div>
         <div className='row'>
-          <div className='col-s10'>
+          <div>
+            <div className='vertical-space'/>
+            <h5 className='col s12 welcome-text center'>
+              Toda <b>gran aventura</b> empieza con un
+            </h5>
+          </div>
+          <div>
+            <h5 className='col-12 welcome-text center'>
+              “Si, quiero”.
+            </h5>
+          </div>
+          <div className='vertical-space'/>
+        </div>
+        <div className='row'>
+          <div className='col s10'>
             <form noValidate onSubmit={this.onSubmit}>
-              <div className='input-field col-s10 offset-1'>
+              <div className='input-field col s10 offset-s1'>
                 {/*<i className="material-icons prefix">phone</i>*/}
                 <input
                   onChange={this.onChange}
@@ -108,11 +116,11 @@ class Login extends Component {
             </span>
               <div className='row'>
                 <div className='col-8 offset-2'>
-                <button
-                  type='submit'
-                  className='right btn-large waves-effect'>
-                  Ingresar
-                </button>
+                  <button
+                    type='submit'
+                    className='right btn waves-effect'>
+                    Ingresar
+                  </button>
                 </div>
               </div>
             </form>
