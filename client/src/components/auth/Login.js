@@ -61,10 +61,10 @@ class Login extends Component {
     const {errors} = this.state;
 
     return (
-      <div className='container'>
-        <div className='row header-space'/>
-        <div className='col s12'>
-          <h1 className='header-text'>
+      <div className=''>
+        <div className='container header-space'/>
+        <div className='row'>
+          <h1 className='col s12 header-text'>
             Micka & Mauro
           </h1>
         </div>

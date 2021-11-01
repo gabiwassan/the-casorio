@@ -5,8 +5,10 @@ import './Layout.css';
 class ImageFooter extends Component {
   render() {
     return (
-      <div className='col s12'>
-        <img className='footer-image' src={footer} alt='footer'/>
+      <div className='row'>
+        <div className='col s12'>
+          <img className='footer-image' src={footer} alt='footer'/>
+        </div>
       </div>
     );
   }
