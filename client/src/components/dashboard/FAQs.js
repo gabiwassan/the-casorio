@@ -33,7 +33,7 @@ class FAQs extends Component {
                 <Collapsible className='FAQ-text' openedClassName='FAQ-text'
                              trigger={<h5><i className='material-icons'>expand_more </i>Puedo ir de Bermudas?</h5>}>
                   <h6 className='FAQ-answer'>Dice Mauro que si él no puede ir de bermudas vos tampoco. El codigo de
-                    vestimenta es etiqueta (Formal).</h6>
+                    vestimenta es Formal.</h6>
                 </Collapsible>
               </div>
               <div className='col s10 offset-s1 left'>
