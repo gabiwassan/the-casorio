@@ -7,7 +7,7 @@ class Header extends Component {
     return (
       <div className='row'>
         <div className='header-space'/>
-        <div className='col-s12'>
+        <div className='col s12'>
           <h1 className='header-text'>
             Micka & Mauro
           </h1>

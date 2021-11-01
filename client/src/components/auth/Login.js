@@ -61,9 +61,9 @@ class Login extends Component {
     const {errors} = this.state;
 
     return (
-      <div className='container-fluid'>
+      <div className='container'>
         <div className='row header-space'/>
-        <div className='col-s12'>
+        <div className='col s12'>
           <h1 className='header-text'>
             Micka & Mauro
           </h1>
@@ -75,8 +75,8 @@ class Login extends Component {
               Toda <b>gran aventura</b> empieza con un
             </h5>
           </div>
-          <div>
-            <h5 className='col-12 welcome-text center'>
+          <div className='col 12'>
+            <h5 className='welcome-text center'>
               “Si, quiero”.
             </h5>
           </div>
@@ -111,17 +111,21 @@ class Login extends Component {
                 {errors.groupNotFound ?
                   <QueLeDoyError/> : <></>}
               </div>
-              <span className='instructions col-12 offset-1'>
+              <div className='col s12 offset-s1'>
+              <span className='instructions'>
               Sin el 0 y sin el 15. Ej: 3513079896
             </span>
-              <div className='row'>
-                <div className='col-8 offset-2'>
-                  <button
-                    type='submit'
-                    className='right btn waves-effect'>
-                    Ingresar
-                  </button>
-                </div>
+              </div>
+              <div className='col s2'>
+              </div>
+              <div className='col s8'>
+                <button
+                  type='submit'
+                  className='right btn waves-effect'>
+                  Ingresar
+                </button>
+              </div>
+              <div className='col s2'>
               </div>
             </form>
           </div>

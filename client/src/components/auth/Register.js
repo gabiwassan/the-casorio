@@ -13,6 +13,7 @@ class Register extends Component {
       group: '',
       phone: '',
       card: '',
+      family: '',
       errors: {}
     };
   }
@@ -43,7 +44,9 @@ class Register extends Component {
       name: this.state.name,
       group: this.state.group,
       phone: this.state.phone,
-      card: this.state.card
+      card: this.state.card,
+      family: this.state.family
+
     };
 
     this.props.registerUser(newUser, this.props.history);
@@ -54,8 +57,9 @@ class Register extends Component {
 
     return (
       <div className='container'>
+        <div className='row'></div>
         <div className='row'>
-          <div className='col s8 offset-s2'>
+          <div className='col s12 offset-s2'>
             <Link to='/' className='btn-flat waves-effect'>
               <i className='material-icons left'>keyboard_backspace</i> Back to
               home
@@ -125,6 +129,19 @@ class Register extends Component {
                 <label htmlFor='card'>Valor de la Tarjeta</label>
                 <span className='red-text'>{errors.card}</span>
               </div>
+              <div className='input-field col s12'>
+                <p>
+                  <label>
+                    <input
+                      type="checkbox"
+                      value={this.state.family}
+                      onClick={'checked'}
+                      error={errors.family}
+                      id='family'/>
+                    <span>Es grupo familiar?</span>
+                  </label>
+                </p>
+              </div>
               <div className='col s12'>
                 <button
                   style={{
@@ -136,6 +153,7 @@ class Register extends Component {
                   type='submit'
                   className='btn btn-large waves-effect waves-light hoverable'
                 >
+
                   Sign up
                 </button>
               </div>

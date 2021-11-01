@@ -31,7 +31,8 @@ router.post('/register', (req, res) => {
       name: req.body.name,
       group: req.body.group,
       phone: req.body.phone,
-      card: req.body.card
+      card: req.body.card,
+      family: req.body.family
     });
     newUser
       .save()
@@ -70,7 +71,8 @@ router.post('/login', (req, res) => {
         id: user.id,
         name: user.name,
         group: user.group,
-        card: user.card
+        card: user.card,
+        family: user.family
       };
 
       // Sign token

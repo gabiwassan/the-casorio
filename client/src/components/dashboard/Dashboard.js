@@ -22,39 +22,46 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <div className='container-fluid'>
+        <div className='container'>
           <div className='row header-space'/>
-          <div className='row center'>
+          <div className='row header-navigation center'>
             <div className='col s4'>
               <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
-                <i className='material-icons left'>keyboard_backspace</i>Salir</Link>
+                <i className='material-icons left'>keyboard_backspace</i>
+                Salir
+              </Link>
             </div>
             <div className='col s4'>
               <Link to='/dashboard/church' className='btn-flat waves-effect'>
-                <i className='material-icons left'>church</i> Iglesia</Link>
+                <i className='material-icons left'>church</i>
+                Iglesia
+              </Link>
             </div>
             <div className='col s4'>
               <Link to='/dashboard/party' className='btn-flat waves-effect'>
-                <i className='material-icons left'>celebration</i>Salón</Link>
+                <i className='material-icons left'>celebration</i>
+                Salón
+              </Link>
             </div>
           </div>
         </div>
-        <div style={{height: '60vh'}} className='container valign-wrapper'>
-          <div className='row center-align'>
-            <div className='home-text col s12'>
+        <div style={{height: '40vh'}} className='container valign-wrapper'>
+          <div className='row center'>
+            <div className='home-text'>
               <div>
                 <h4>
                   Hola, <b>{user.group}</b>!
                 </h4>
               </div>
+              <div className='greet-space'/>
               <div className='row'>
-                <div className='col s10 offset-s1'>
+                <div className='col s10'>
                   <FamilyGroup user={user}/>
                 </div>
               </div>
               <div className='row'>
                 <h5>
-                  <i className='material-icons'>credit_card </i> ${user.card} por persona.
+                  Valor de la tarjeta: ${user.card} por persona.
                 </h5>
               </div>
             </div>

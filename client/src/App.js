@@ -43,8 +43,8 @@ class App extends Component {
         <Router>
           <div className='App header-image'>
             <Route exact path='/' component={Login}/>
-            <Route exact path='/register' component={Register}/>
             <Switch>
+              <PrivateRoute exact path='/register' component={Register}/>
               <PrivateRoute exact path='/dashboard' component={Dashboard}/>
               <PrivateRoute exact path='/dashboard/church' component={ChurchMap}/>
               <PrivateRoute exact path='/dashboard/party' component={PartyMap}/>

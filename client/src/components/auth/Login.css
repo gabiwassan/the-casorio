@@ -7,8 +7,6 @@
 .btn {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     color: white;
     background-color: #BA9F63;
@@ -65,7 +63,6 @@
 
 .instructions {
     font-family: 'Lato', sans-serif;
-    padding-left: 10px;
 }
 
 .red-text {

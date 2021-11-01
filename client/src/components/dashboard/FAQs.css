@@ -1,5 +1,10 @@
 .FAQ-title{
-    text-align: center
+    text-align: center;
+    color: #ba9f63;
+}
+
+.FAQ-title:hover{
+    color: black;
 }
 
 .FAQ-text {

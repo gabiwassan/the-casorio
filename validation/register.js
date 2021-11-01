@@ -8,6 +8,7 @@ module.exports = function validateRegisterInput(data) {
   data.name = !isEmpty(data.name) ? data.name : '';
   data.group = !isEmpty(data.group) ? data.group : '';
   data.phone = !isEmpty(data.phone) ? data.phone : '';
+  data.family = !isEmpty(data.family) ? data.family : false;
 
   // Name checks
   if (Validator.isEmpty(data.name)) {
@@ -23,8 +24,8 @@ module.exports = function validateRegisterInput(data) {
     errors.phone = 'El teléfono es requerido';
   }
 
-  if (!Validator.isLength(data.phone, {min: 10, max: 10})) {
-    errors.phone = 'phone must be 10 characters';
+  if (!Validator.isLength(data.phone, {min: 9, max: 10})) {
+    errors.phone = 'El teléfono debe tener 10 nros';
   }
 
   return {
