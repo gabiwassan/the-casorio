@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export const FamilyGroup = (props) => {
   return <>
     {props.user.family ? (
-      <div >
+      <div>
         <div className='col s12'>
           <h4>
             <b>Ustedes</b> de alguna forma, fueron parte de esta <b>hermosa historia de amor</b>, y nos
@@ -17,7 +17,9 @@ export const FamilyGroup = (props) => {
             brindar, reir y disfrutar con nosotros.
           </h4>
         </div>
-      </div>) : (<>
+      </div>
+    ) : (
+      <div>
         <div className='col s12'>
           <h4>
             <b>Vos</b> de alguna forma, fuiste parte de esta <b>hermosa historia de amor</b>, y nos
@@ -30,9 +32,8 @@ export const FamilyGroup = (props) => {
             brindar, reir y disfrutar con nosotros.
           </h4>
         </div>
-      </>
-    )
-    }
+      </div>
+    )}
   </>;
 }
 
