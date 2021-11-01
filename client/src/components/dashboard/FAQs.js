@@ -5,7 +5,7 @@ import './FAQs.css'
 class FAQs extends Component {
   render() {
     return (
-      <div className='container'>
+      <div className='row'>
         <div className='FAQs row offset-s1 '>
           <Collapsible className='col s10 FAQ-text waves-effect' openedClassName='col s10 FAQ-text waves-effect'
                        trigger={<h5 className='FAQ-title FAQ-text'><i className='material-icons'>touch_app</i>

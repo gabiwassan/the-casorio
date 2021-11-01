@@ -9,10 +9,10 @@
 .responsive-iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 5%;
     bottom: 0;
-    right: 0;
-    width: 100%;
+    right: 5%;
+    width: 90%;
     height: 100%;
 }
 
@@ -22,20 +22,9 @@
     font-family: 'Merriweather', serif;
 }
 
-.gradient {
-    background: linear-gradient(to top, white, grey)
-}
-
 .header-navigation {
-    right: 1%;
-    left: 1%;
-    top: 170px;
     font-weight: bold;
     Color: #ba9f63;
-}
-
-.footer-image {
-    bottom: 0;
 }
 
 .header-space {

@@ -22,42 +22,37 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <div className='container'>
-          <div className='row header-space'/>
-          <div className='row header-navigation center'>
-            <div className='col s4'>
-              <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
-                <i className='material-icons left'>keyboard_backspace</i>
-                Salir
-              </Link>
-            </div>
-            <div className='col s4'>
-              <Link to='/dashboard/church' className='btn-flat waves-effect'>
-                <i className='material-icons left'>church</i>
-                Iglesia
-              </Link>
-            </div>
-            <div className='col s4'>
-              <Link to='/dashboard/party' className='btn-flat waves-effect'>
-                <i className='material-icons left'>celebration</i>
-                Salón
-              </Link>
-            </div>
+        <div className='row header-space'/>
+        <div className='row header-navigation center'>
+          <div className='col s4'>
+            <Link to='/' className='btn-flat waves-effect' onClick={this.onLogoutClick}>
+              <i className='material-icons left'>keyboard_backspace</i>
+              Salir
+            </Link>
+          </div>
+          <div className='col s4'>
+            <Link to='/dashboard/church' className='btn-flat waves-effect'>
+              <i className='material-icons left'>church</i>
+              Iglesia
+            </Link>
+          </div>
+          <div className='col s4'>
+            <Link to='/dashboard/party' className='btn-flat waves-effect'>
+              <i className='material-icons left'>celebration</i>
+              Salón
+            </Link>
           </div>
         </div>
-        <div style={{height: '40vh'}} className='container valign-wrapper'>
-          <div className='row center'>
+        <div style={{height: '40vh'}} className='valign-wrapper center-align'>
+          <div className='container'>
             <div className='home-text'>
-              <div>
+              <div className='row'>
                 <h4>
                   Hola, <b>{user.group}</b>!
                 </h4>
               </div>
-              <div className='greet-space'/>
               <div className='row'>
-                <div className='col s10'>
-                  <FamilyGroup user={user}/>
-                </div>
+                <FamilyGroup user={user}/>
               </div>
               <div className='row'>
                 <h5>
@@ -69,11 +64,6 @@ class Dashboard extends Component {
         </div>
         <FAQs/>
         <ImageFooter/>
-        <h5 className="weather-text center">
-          <b>Aca te dejamos el pronostico para que planees tu outfit.</b>
-          <i className='material-icons left'>arrow_downward </i>
-          <i className='material-icons right'>arrow_downward </i>
-        </h5>
         <WeatherWidget/>
       </div>
     );
