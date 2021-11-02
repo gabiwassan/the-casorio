@@ -20,8 +20,16 @@
     height: 20px;
 }
 
+.valign-wrapper{
+    height: 50vh;
+}
+
 @media (max-width: 390px) {
     .btn-flat {
         font-size: 11px;
+    }
+
+    .valign-wrapper{
+        height: 60vh;
     }
 }

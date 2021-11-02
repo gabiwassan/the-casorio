@@ -43,7 +43,7 @@ class Dashboard extends Component {
             </Link>
           </div>
         </div>
-        <div style={{height: '52vh'}} className='valign-wrapper center-align'>
+        <div className='valign-wrapper center-align'>
           <div className='container'>
             <div className='home-text'>
               <div className='row'>
