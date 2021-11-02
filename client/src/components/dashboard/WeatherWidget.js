@@ -9,7 +9,7 @@ export const WeatherWidget = () => {
             <i className='material-icons left'>arrow_downward </i>
           </div>
           <div className='col s10 center'>
-            <b>Aca te dejamos el pronostico para que planees tu outfit.</b>
+            <b>Aca te dejamos el pronóstico para que planees tu outfit.</b>
           </div>
           <div className='col s1'>
             <i className='material-icons right'>arrow_downward </i>

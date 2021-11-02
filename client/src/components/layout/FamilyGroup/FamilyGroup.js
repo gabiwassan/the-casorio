@@ -14,7 +14,7 @@ export const FamilyGroup = (props) => {
         <div className='col s12'>
           <h4>
             Por eso, el viernes <b>14 de enero del 2022</b> queremos verlos bailar,
-            brindar, reir y disfrutar con nosotros.
+            brindar, reír y disfrutar con nosotros.
           </h4>
         </div>
       </div>
@@ -29,7 +29,7 @@ export const FamilyGroup = (props) => {
         <div className='col s12'>
           <h4>
             Por eso, el viernes <b>14 de enero del 2022</b> queremos verte bailar,
-            brindar, reir y disfrutar con nosotros.
+            brindar, reír y disfrutar con nosotros.
           </h4>
         </div>
       </div>

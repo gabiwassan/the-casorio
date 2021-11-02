@@ -13,7 +13,7 @@ class ChurchMap extends Component {
             <div className='vertical-space'/>
             <div>
               <h5 className='text center'>
-                La <b>ceremonia</b> se celebrará en la iglesia <b>Nuestra señora del carmen</b> en <b>Villa Allende</b>.
+                La <b>ceremonia</b> se celebrará en la iglesia <b>Nuestra Señora del Carmen</b> en <b>Villa Allende</b>.
               </h5>
             </div>
             <div>

@@ -10,12 +10,18 @@
     padding-right: 30px;
 }
 
-.btn-flat{
+.btn-flat {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-.greet-space{
+.greet-space {
     height: 20px;
+}
+
+@media (max-width: 390px) {
+    .btn-flat {
+        font-size: 11px;
+    }
 }

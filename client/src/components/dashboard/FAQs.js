@@ -26,13 +26,13 @@ class FAQs extends Component {
                              trigger={<h5><i className='material-icons'>expand_more </i>El monto de la tarjeta esta
                                congelado?</h5>}>
                   <h6 className='FAQ-answer'>No, pues Argentina. El valor que figura arriba es el de este mes. Se va a
-                    irmodificando en los siguientes meses por cuestiones de inflacion.</h6>
+                    ir modificando en los siguientes meses por cuestiones de inflación.</h6>
                 </Collapsible>
               </div>
               <div className='col s10 offset-s1 left'>
                 <Collapsible className='FAQ-text' openedClassName='FAQ-text'
                              trigger={<h5><i className='material-icons'>expand_more </i>Puedo ir de Bermudas?</h5>}>
-                  <h6 className='FAQ-answer'>Dice Mauro que si él no puede ir de bermudas vos tampoco. El codigo de
+                  <h6 className='FAQ-answer'>Dice Mauro que si él no puede ir de bermudas, vos tampoco. El código de
                     vestimenta es Formal.</h6>
                 </Collapsible>
               </div>
@@ -50,10 +50,11 @@ class FAQs extends Component {
                 <Collapsible className='FAQ-text' openedClassName='FAQ-text'
                              trigger={<h5><i className='material-icons'>expand_more </i>Suele haber controles de
                                caminera
-                               camino a Saldan?</h5>}>
+                               camino a Saldán?</h5>}>
                   <h6 className='FAQ-answer'>Tenemos entendido que no. Pero lo mejor seria que se organicen entre los
                     que
-                    van, para hacerlo en Traffics. Para eso cree <a href="https://chat.whatsapp.com/HxsCNGyQlSXDVGL70SmnEc">este grupo de whatsapp</a> en el que
+                    van, para hacerlo en Traffics. Para eso cree <a
+                      href="https://chat.whatsapp.com/HxsCNGyQlSXDVGL70SmnEc">este grupo de whatsapp</a> en el que
                     pueden
                     organizarse</h6>
                 </Collapsible>

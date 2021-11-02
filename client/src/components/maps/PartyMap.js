@@ -12,17 +12,17 @@ class PartyMap extends Component {
           <div className='vertical-space'/>
           <div>
             <h5 className='text center'>
-              El Salon es <b>Mansueto 1912</b> en <b>Saldan</b>.
+              El Salón es <b>Mansueto 1912</b> en <b>Saldán</b>.
             </h5>
           </div>
           <div>
             <h5 className='text center'>
-              Despues de la <b>iglesia</b> nos vamos al salon a partir de las <b>18 hs</b>.
+              Después de la <b>iglesia</b> nos vamos al salón a partir de las <b>18 hs</b>.
             </h5>
           </div>
           <div>
             <h5 className='text center'>
-              A las <b>19:30 hs</b> nos casamos por <b>civil</b> y ahi empieza la <b>joda</b>.
+              A las <b>19:30 hs</b> nos casamos por <b>civil</b> y ahí empieza la <b>joda</b>.
             </h5>
           </div>
           <div className='vertical-space'/>

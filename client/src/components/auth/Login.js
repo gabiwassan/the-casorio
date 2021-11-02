@@ -77,7 +77,7 @@ class Login extends Component {
           </div>
           <div className='col 12'>
             <h5 className='welcome-text center'>
-              “Si, quiero”.
+              “Sí, quiero”.
             </h5>
           </div>
           <div className='vertical-space'/>
