@@ -1,5 +1,5 @@
 import React from 'react';
-import './MapStyles.css';
+import './../MapStyles.css';
 import { MapHeader } from './../MapHeader';
 import ImageFooter from '../../layout/ImageFooter';
 

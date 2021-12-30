@@ -20,29 +20,28 @@ const Faqs = (props) => {
 
           <div clasName="row">
             <div className="col m12 s12 card m6">
-              <h4 className="text-header-card">Pregunta?</h4>
+              <h4 className="text-header-card">¿ Y ella ?</h4>
               <p className="text center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
-              <h4 className="text-header-card">Pregunta?</h4>
+              <h4 className="text-header-card">¿ Y la mami ?</h4>
               <p className="text center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
-              <h2 className="text-header-card">Pregunta?</h2>
+              <h4 className="text-header-card">¿ Vahhh ?</h4>
               <p className="text center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
-              <h2 className="text-header-card">Pregunta?</h2>
+              <h4 className="text-header-card">¿ Fi ?</h4>
               <p className="text center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
             </div>
           </div>
-          <ImageFooter className="footer-image" />
         </div>
       </div>
     </div>

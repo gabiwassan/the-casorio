@@ -13,9 +13,10 @@ import Dashboard from './components/dashboard/Dashboard';
 
 import './App.css';
 import Register from './components/auth/Register';
-import PartyMap from './components/sections/PartyMap';
+import PartyMap from './components/sections//Party/PartyMap';
 import Payment from './components/sections/Payment/Payment';
 import Confirmation from './components/sections/Confirmation/Confirmation';
+import Faqs from './components/sections/Faqs/Faqs';
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -50,6 +51,7 @@ class App extends Component {
               <PrivateRoute exact path="/dashboard/payment" component={Payment} />
               <PrivateRoute exact path="/dashboard/party" component={PartyMap} />
               <PrivateRoute exact path="/dashboard/confirmation" component={Confirmation} />
+              <PrivateRoute exact path="/dashboard/faqs" component={Faqs} />
             </Switch>
           </div>
         </Router>

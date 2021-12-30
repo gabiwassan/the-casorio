@@ -33,7 +33,9 @@ export const CardList = (props) => {
 
       <div className="col m6 s12 card">
         <h2>Preguntas frecuentes</h2>
-        <a class="right waves-effect waves-light btn">AQUI</a>
+        <Link to="/dashboard/faqs">
+          <a class="right waves-effect waves-light btn">AQUÍ</a>
+        </Link>
       </div>
     </div>
   );
