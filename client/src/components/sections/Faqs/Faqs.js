@@ -1,12 +1,9 @@
 import React from 'react';
 import './../MapStyles.css';
 import './Faqs.css';
-import { MapHeader } from '../MapHeader';
-import ImageFooter from '../../layout/ImageFooter';
-import { connect } from 'react-redux';
-import { logoutUser } from '../../../actions/authActions';
+import MapHeader from '../MapHeader';
 
-const Faqs = (props) => {
+const Faqs = () => {
   return (
     <div className="container>">
       <MapHeader />

@@ -1,10 +1,10 @@
 import React from 'react';
 import './../MapStyles.css';
 import './Confirmation.css';
-import { MapHeader } from '../MapHeader';
 import ImageFooter from '../../layout/ImageFooter';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../../actions/authActions';
+import MapHeader from '../MapHeader';
 
 const Confirmation = (props) => {
   const { card } = props.auth.user;
@@ -48,7 +48,7 @@ const Confirmation = (props) => {
                 </p>
                 <div className="row">
                   <div className="input-field col s12">
-                    <textarea id="textarea1" className="materialize-textarea"/>
+                    <textarea id="textarea1" className="materialize-textarea" />
                     <label for="textarea1">Déjanos un mensaje...</label>
                   </div>
                 </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import './../MapStyles.css';
 import './Payment.css';
-import { MapHeader } from './../MapHeader';
 import ImageFooter from '../../layout/ImageFooter';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../../actions/authActions';
+import MapHeader from "../MapHeader";
 
 const Payment = (props) => {
   const { card } = props.auth.user;
@@ -23,7 +23,7 @@ const Payment = (props) => {
             <div className="vertical-space" />
           </div>
 
-          <div clasName="row">
+          <div className="row">
             <div className="col m12 s12 card m6">
               <h2 className="text-header-card">Formas de pago</h2>
               <p className="text center">

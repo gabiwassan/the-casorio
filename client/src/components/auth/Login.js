@@ -63,7 +63,7 @@ class Login extends Component {
 
     return (
       <div className="">
-        <div className="container header-space" />
+        <div className="container header-space-login" />
         <div className="row">
           <h1 className="col s12 header-text">Yami & Gabi</h1>
         </div>
