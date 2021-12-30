@@ -22,34 +22,17 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <div className="col s4 my-4">
+        <div className="col s4 my-4 home-padding">
           <Link to="/" className="btn-flat waves-effect" onClick={this.onLogoutClick}>
             <i className="material-icons left">keyboard_backspace</i>
             Salir
           </Link>
         </div>
         <div className="row header-space-dashboard" />
-      
-        {/*<div className="row header-space" />
-         <div className="row header-navigation center">
-      
-          <div className="col s4">
-            <Link to="/dashboard/church" className="btn-flat waves-effect">
-              <i className="material-icons left">church</i>
-              Iglesia
-            </Link>
-          </div>
-          <div className="col s4">
-            <Link to="/dashboard/party" className="btn-flat waves-effect">
-              <i className="material-icons left">celebration</i>
-              Salón
-            </Link>
-          </div>
-        </div> */}
 
         <div className="valign-wrapper center-align">
           <div className="container">
-            <div className="home-text">
+            <div className="home-padding">
               <div className="row">
                 <h4>
                   Hola, <b>{user.group}</b>!

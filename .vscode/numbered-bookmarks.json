@@ -46,15 +46,60 @@
 			]
 		},
 		{
-			"path": "client/src/components/auth/Login.js",
+			"path": "client/src/components/sections/Payment.js",
 			"bookmarks": [
 				{
 					"line": -1,
 					"column": 0
 				},
 				{
-					"line": 141,
-					"column": 1
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": 40,
+					"column": 3
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": -1,
+					"column": 0
+				}
+			]
+		},
+		{
+			"path": "client/src/components/dashboard/Dashboard.js",
+			"bookmarks": [
+				{
+					"line": -1,
+					"column": 0
+				},
+				{
+					"line": 58,
+					"column": 0
 				},
 				{
 					"line": -1,
