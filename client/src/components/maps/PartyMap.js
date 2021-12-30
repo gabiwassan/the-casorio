@@ -9,7 +9,6 @@ class PartyMap extends Component {
       <div>
         <MapHeader />
         <div className="map-body">
-          <div className="vertical-space" />
           <div>
             <h5 className="text center">
               El Salón es <b>Estancia El Rosal</b> en <b>Agua de Oro</b>.

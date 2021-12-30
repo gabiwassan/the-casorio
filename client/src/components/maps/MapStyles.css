@@ -28,32 +28,32 @@
 }
 
 .header-space {
-  height: 18rem;
+  height: 1rem;
 }
 
 @media (max-width: 1000px) {
   .header-text {
-    line-height: 15rem;
+    line-height: 1rem;
   }
 
   .header-space {
-    height: 15rem;
+    height: 1rem;
   }
 }
 
 @media (max-width: 800px) {
   .header-text {
-    line-height: 12rem;
+    line-height: 1rem;
   }
 
   .header-space {
-    height: 12rem;
+    height: 1rem;
   }
 }
 
 @media (max-width: 600px) {
   .header-text {
-    line-height: 10rem;
+    line-height: 1rem;
   }
 
   .header-space {
@@ -61,17 +61,17 @@
   }
 
   .header-space-dashboard {
-    height: 10rem;
+    height: 1rem;
   }
 }
 
 @media (max-width: 400px) {
   .header-text {
-    line-height: 7rem;
+    line-height: 1rem;
   }
 
   .header-space {
-    height: 7rem;
+    height: 1rem;
   }
 }
 

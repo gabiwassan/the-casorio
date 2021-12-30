@@ -6,8 +6,7 @@ class MapHeader extends Component {
   render() {
     return (
       <div>
-        <div className="row header-space" />
-        <div className="row header-navigation center">
+        <div className="row header-navigation center my-4">
           <div className="col left-align">
             <Link to="/dashboard" className="btn-flat waves-effect">
               <i className="material-icons left">keyboard_backspace </i>
