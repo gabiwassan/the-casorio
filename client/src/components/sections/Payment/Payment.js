@@ -9,7 +9,7 @@ import { logoutUser } from '../../../actions/authActions';
 const Payment = (props) => {
   const { card } = props.auth.user;
   return (
-    <>
+    <div className="container>">
       <MapHeader />
       <div className="home-padding">
         <div className="map-body ">
@@ -35,7 +35,7 @@ const Payment = (props) => {
           <ImageFooter className="footer-image" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

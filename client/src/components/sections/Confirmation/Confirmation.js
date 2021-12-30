@@ -9,8 +9,8 @@ import { logoutUser } from '../../../actions/authActions';
 const Confirmation = (props) => {
   const { card } = props.auth.user;
 
-  const onSubmit = (event) => {
-    event.preventDefault();
+  const onSubmit = (e) => {
+    e.preventDefault();
     console.log('submited');
   };
 
@@ -18,7 +18,7 @@ const Confirmation = (props) => {
     <div className="container>">
       <MapHeader />
       <div className="home-padding">
-        <div className="map-body ">
+        <div className="map-body">
           <div className="vertical-space" />
           <div>
             <h1 className="text center">Confrmá tu presencia</h1>
@@ -33,7 +33,7 @@ const Confirmation = (props) => {
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
 
-              <form noValidate onSubmit={onSubmit}>
+              <form className="text" onSubmit={onSubmit}>
                 <p>
                   <label>
                     <input name="group1" type="radio" checked />
@@ -46,14 +46,14 @@ const Confirmation = (props) => {
                     <span>No</span>
                   </label>
                 </p>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Dejanos un mensaje...</label>
+                <div className="row">
+                  <div className="input-field col s12">
+                    <textarea id="textarea1" className="materialize-textarea"/>
+                    <label for="textarea1">Déjanos un mensaje...</label>
                   </div>
                 </div>
                 <button type="submit" className="right btn waves-effect btn-size">
-                  ENVIAR CONFIRMACION
+                  ENVIAR CONFIRMACIÓN
                 </button>
               </form>
             </div>

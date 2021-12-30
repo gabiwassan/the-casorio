@@ -46,7 +46,7 @@
 			]
 		},
 		{
-			"path": "client/src/components/sections/Payment.js",
+			"path": "client/src/components/auth/Login.js",
 			"bookmarks": [
 				{
 					"line": -1,
@@ -57,8 +57,8 @@
 					"column": 0
 				},
 				{
-					"line": 40,
-					"column": 3
+					"line": 84,
+					"column": 0
 				},
 				{
 					"line": -1,
@@ -91,15 +91,15 @@
 			]
 		},
 		{
-			"path": "client/src/components/dashboard/Dashboard.js",
+			"path": "client/src/components/sections/Confirmation/Confirmation.js",
 			"bookmarks": [
 				{
 					"line": -1,
 					"column": 0
 				},
 				{
-					"line": 58,
-					"column": 0
+					"line": 38,
+					"column": 44
 				},
 				{
 					"line": -1,

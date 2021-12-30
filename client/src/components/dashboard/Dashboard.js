@@ -21,8 +21,8 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     return (
-      <div>
-        <div className="col s4 my-4 home-padding">
+      <div className="home-padding">
+        <div className="col s4 my-4">
           <Link to="/" className="btn-flat waves-effect" onClick={this.onLogoutClick}>
             <i className="material-icons left">keyboard_backspace</i>
             Salir
@@ -32,7 +32,7 @@ class Dashboard extends Component {
 
         <div className="valign-wrapper center-align">
           <div className="container">
-            <div className="home-padding">
+            <div>
               <div className="row">
                 <h4>
                   Hola, <b>{user.group}</b>!

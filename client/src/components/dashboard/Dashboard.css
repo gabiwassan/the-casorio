@@ -1,31 +1,31 @@
 .weather-text {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Lato', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .home-padding {
-    font-family: 'Merriweather', serif;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  font-family: 'Merriweather', serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn-flat {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .greet-space {
-    height: 20px;
+  height: 20px;
 }
 
 @media (max-width: 390px) {
-    .btn-flat {
-        font-size: 11px;
-    }
+  .btn-flat {
+    font-size: 11px;
+  }
 
-    .valign-wrapper{
-        height: 60vh;
-    }
+  .valign-wrapper {
+    height: 60vh;
+  }
 }
