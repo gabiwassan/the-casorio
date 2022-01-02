@@ -1,6 +1,6 @@
 import React from 'react';
 import './../MapStyles.css';
-import ImageFooter from '../../layout/ImageFooter';
+import ImageFooter from '../../footerLogin/FooterLogin';
 import MapHeader from '../MapHeader';
 
 const PartyMap = () => {

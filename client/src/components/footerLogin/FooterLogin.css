@@ -1,0 +1,16 @@
+.margin-waves-top {
+  margin-top: -290px;
+}
+
+.footer-dino-image {
+  position: absolute;
+  left: 20%;
+  top: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.no-margin {
+  margin: 0;
+}

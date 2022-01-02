@@ -1,7 +1,7 @@
 import React from 'react';
 import './../MapStyles.css';
 import './Confirmation.css';
-import ImageFooter from '../../layout/ImageFooter';
+import ImageFooter from '../../footerLogin/FooterLogin';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../../actions/authActions';
 import MapHeader from '../MapHeader';

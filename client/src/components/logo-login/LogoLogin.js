@@ -1,13 +1,15 @@
 import React from 'react';
-import header from './../../assets/header.png';
-import './Header.css'
+import logo from './../../assets/logo-login.png';
+import './LogoLogin.css';
 
 const LogoLogin = () => {
   return (
     <div className="row">
-      <div className="col s12 no-padding">
-        <img src={header} />
-        <p className="date-header"> 25 . 02 . 2022</p>
+      <div className="col center-align no-padding">
+        <img src={logo} />
+        <p className="login-text">
+          Porque el camino vale más la pena si lo recorremos juntos. NOS CASAMOS!
+        </p>
       </div>
     </div>
   );

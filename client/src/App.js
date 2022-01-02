@@ -11,7 +11,6 @@ import Login from './components/auth/Login';
 import PrivateRoute from './components/private-route/PrivateRoute';
 import Dashboard from './components/dashboard/Dashboard';
 
-import './App.css';
 import Register from './components/auth/Register';
 import PartyMap from './components/sections//Party/PartyMap';
 import Payment from './components/sections/Payment/Payment';

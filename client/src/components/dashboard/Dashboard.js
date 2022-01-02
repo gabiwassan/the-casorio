@@ -3,11 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import { Link } from 'react-router-dom';
-import { FAQs } from './FAQs';
-import ImageFooter from '../layout/ImageFooter';
 import './Dashboard.css';
 import { CardList } from '../layout/CardList/CardList';
-import Player from '../layout/Player/Player';
 
 //this is the invitation card
 
@@ -45,7 +42,6 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-        <ImageFooter />
       </div>
     );
   }

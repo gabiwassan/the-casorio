@@ -57,7 +57,7 @@
 					"column": 0
 				},
 				{
-					"line": 84,
+					"line": 73,
 					"column": 0
 				},
 				{
@@ -91,15 +91,15 @@
 			]
 		},
 		{
-			"path": "client/src/components/sections/Confirmation/Confirmation.js",
+			"path": "client/src/components/header/Header.js",
 			"bookmarks": [
 				{
 					"line": -1,
 					"column": 0
 				},
 				{
-					"line": 38,
-					"column": 44
+					"line": 13,
+					"column": 2
 				},
 				{
 					"line": -1,

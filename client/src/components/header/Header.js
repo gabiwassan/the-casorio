@@ -1,19 +1,16 @@
-import React, {Component} from 'react';
-import './Layout.css';
+import React from 'react';
+import header from './../../assets/header.png';
+import './Header.css'
 
-//this is the header
-class Header extends Component {
-  render() {
-    return (
-      <div className='row'>
-        <div className='col s12'>
-          <h1 className='header-text'>
-            Yami & Gabi
-          </h1>
-        </div>
+const Header = () => {
+  return (
+    <div className="row">
+      <div className="col s12 no-padding">
+        <img src={header} />
+        <p className="date-header"> 25 . 02 . 2022</p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Header;
