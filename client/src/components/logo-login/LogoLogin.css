@@ -1,0 +1,13 @@
+.login-text {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #6c7482;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 33px;
+}

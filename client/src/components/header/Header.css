@@ -1,0 +1,21 @@
+.no-padding {
+  padding: 0;
+}
+
+.date-header {
+  position: absolute;
+  width: 131px;
+  height: 20px;
+  left: 134.5px;
+  top: 91px;
+
+  text-align: center;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.13em;
+
+  color: #5c657b;
+}
