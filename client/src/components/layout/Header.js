@@ -6,10 +6,9 @@ class Header extends Component {
   render() {
     return (
       <div className='row'>
-        <div className='header-space'/>
         <div className='col s12'>
           <h1 className='header-text'>
-            Micka & Mauro
+            Yami & Gabi
           </h1>
         </div>
       </div>

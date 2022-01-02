@@ -1,7 +1,7 @@
 {
-  "name": "micka-and-mauro",
+  "name": "the-casorio",
   "version": "1.0.0",
-  "description": "Micka and Mauro",
+  "description": "The Casorio",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
@@ -11,8 +11,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "MauGaP",
-  "license": "MIT",
+  "author": "gabiwassan",
+  "license": "MIT MauGaP",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
