@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="row">
       <div className="col s12 no-padding">
-        <img src={header} />
+        <img className="size-header" src={header} />
         <p className="date-header"> 25 . 02 . 2022</p>
       </div>
     </div>

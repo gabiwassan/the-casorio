@@ -20,16 +20,6 @@
   height: 20px;
 }
 
-@media (max-width: 390px) {
-  .btn-flat {
-    font-size: 11px;
-  }
-
-  .valign-wrapper {
-    height: 60vh;
-  }
-}
-
 .title-dashboard {
   font-family: Playfair Display, serif;
   font-style: normal;
