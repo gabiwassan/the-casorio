@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
-import { Link } from 'react-router-dom';
 import './Dashboard.css';
 import { CardList } from '../layout/CardList/CardList';
+import Header from '../header/Header';
 
 //this is the invitation card
 
@@ -19,12 +19,7 @@ class Dashboard extends Component {
 
     return (
       <div className="home-padding">
-        <div className="col s4 my-4">
-          <Link to="/" className="btn-flat waves-effect" onClick={this.onLogoutClick}>
-            <i className="material-icons left">keyboard_backspace</i>
-            Salir
-          </Link>
-        </div>
+        <Header />
         <div className="row header-space-dashboard" />
 
         <div className="valign-wrapper center-align">
