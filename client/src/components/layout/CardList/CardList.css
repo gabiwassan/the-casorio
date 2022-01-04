@@ -1,57 +1,64 @@
 .borders {
-    border: 1px solid #096AA0;
-    border-radius: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid #096aa0;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .borders-outside {
-    border: 1px solid #096AA0;
-    padding: 3px;
-    border-radius: 12px;
+  border: 1px solid #096aa0;
+  padding: 3px;
+  border-radius: 12px;
 }
 
 .title-card {
-    font-family: Merriweather, serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.13em;
-    color: #595959;
-    margin: 20px;
+  font-family: Merriweather, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  color: #595959;
+  margin: 20px;
 }
 
 .separator {
-    border: 1px solid #6c74824a;
-    width: 80%;
-    margin-bottom: 1rem;
+  border: 1px solid #6c74824a;
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 .btn-size-card {
-    width: 90%;
-    margin-bottom: 2rem;
-    text-decoration: none;
+  width: 90%;
+  margin-bottom: 2rem;
+  text-decoration: none;
 }
 
-.card-value {
-    font-family: Merriweather, serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 130%;
-    margin-bottom: 2rem;
-    color: #6C7482;
+.text-card {
+  font-family: Merriweather, serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 2rem;
+  color: #6c7482;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font18 {
+  font-size: 18px;
 }
 
 .btn-link-card {
-    font-family: Lato, serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 130%;
-    color: #C9B49B;
-    text-decoration: none;
+  font-family: Lato, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  color: #c9b49b;
+  text-decoration: none;
 }

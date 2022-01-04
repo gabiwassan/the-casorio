@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './CardList.css'
+import './CardList.css';
 
 export const CardList = (props) => {
   const { user } = props;
@@ -9,34 +9,29 @@ export const CardList = (props) => {
   return (
     <div clasName="row">
       <div className="col m6 s12 card borders">
+        <p className="title-card">EL SALON</p>
+        <div className="separator" />
+        <p className="text-card font18"> Los esperamos el viernes 25 de febrero a las 18:30 hs en Estancia el Rosal.  </p>
+        <Link className="btn-size-card" to="/dashboard/party">
+          <a class="btn-link-card">- VER COMO LLEGAR -</a>
+        </Link>
+      </div>
+
+      <div className="col m6 s12 card borders">
         <p className="title-card">VALOR TARJETA</p>
-        <div className="separator"/>
-        <p className="card-value"> ${user.card} </p>
+        <div className="separator" />
+        <p className="text-card font24"> ${user.card} </p>
         <Link className="btn-size-card" to="/dashboard/payment">
           <a class="btn-link-card">- VER FORMAS DE PAGO -</a>
         </Link>
       </div>
 
-      <div className="col m6 s12 card">
-        <h2>El Salón</h2>
-        <h5> Some testo </h5>
-        <Link to="/dashboard/party">
-          <a class="right waves-effect waves-light btn">VER MAPA</a>
-        </Link>
-      </div>
-
-      <div className="col m6 s12 card">
-        <h2>Confirmá tu presencia</h2>
-        <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </h5>
-        <Link to="/dashboard/confirmation">
-          <a class="right waves-effect waves-light btn">AQUÍ</a>
-        </Link>
-      </div>
-
-      <div className="col m6 s12 card">
-        <h2>Preguntas frecuentes</h2>
-        <Link to="/dashboard/faqs">
-          <a class="right waves-effect waves-light btn">AQUÍ</a>
+      <div className="col m6 s12 card borders">
+        <p className="title-card">PREGUNTAS FRECUENTES</p>
+        <div className="separator" />
+        <p className="text-card font18"> Sacate todas las dudas aquí.  </p>
+        <Link className="btn-size-card" to="/dashboard/faqs">
+          <a class="btn-link-card">- VER TODAS -</a>
         </Link>
       </div>
     </div>
