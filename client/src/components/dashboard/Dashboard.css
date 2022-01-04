@@ -29,3 +29,32 @@
     height: 60vh;
   }
 }
+
+.title-dashboard {
+  font-family: Playfair Display, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 43px;
+  color: #5C657B;
+}
+
+.text-dashboard {
+  font-family: Lato, serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #6C7482;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

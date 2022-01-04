@@ -1,17 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import './CardList.css'
 
 export const CardList = (props) => {
   const { user } = props;
 
   return (
     <div clasName="row">
-      <div className="col m6 s12 card">
-        <h2>Tarjeta</h2>
-        <h5> ${user.card} </h5>
-        <Link to="/dashboard/payment">
-          <a class="right waves-effect waves-light btn">VER DATOS</a>
+      <div className="col m6 s12 card borders">
+        <p className="title-card">VALOR TARJETA</p>
+        <div className="separator"/>
+        <p className="card-value"> ${user.card} </p>
+        <Link className="btn-size-card" to="/dashboard/payment">
+          <a class="btn-link-card">- VER FORMAS DE PAGO -</a>
         </Link>
       </div>
 

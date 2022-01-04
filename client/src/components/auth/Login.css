@@ -9,7 +9,7 @@
   font-weight: bold;
   justify-content: center;
   color: white;
-  background-color: #417c50;
+  background-color: #C9B49B;
   width: 100%;
   border-radius: 24px;
   letter-spacing: 2px;
@@ -18,12 +18,12 @@
 
 .btn:hover {
   background-color: white;
-  color: #417c50;
+  color: #C9B49B;
 }
 
 .btn:focus {
   background-color: white;
-  color: #417c50;
+  color: #C9B49B;
 }
 
 .input-field {
@@ -31,16 +31,16 @@
 }
 
 .input-field input[type='tel']:focus + label {
-  color: #417c50 !important;
+  color: #C9B49B !important;
 }
 
 .input-field .prefix.active {
-  color: #417c50 !important;
+  color: #C9B49B !important;
 }
 
 .input-field input[type='tel']:focus {
-  border-bottom: 1px solid #417c50 !important;
-  box-shadow: 0 1px 0 0 #417c50 !important;
+  border-bottom: 1px solid #C9B49B !important;
+  box-shadow: 0 1px 0 0 #C9B49B !important;
   color: black;
 }
 
@@ -61,7 +61,7 @@
   text-align: center;
   display: grid;
   align-content: end;
-  color: #417c50;
+  color: #C9B49B;
   right: 2%;
   left: 2%;
   font-size: 36px;
