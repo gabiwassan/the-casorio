@@ -37,6 +37,15 @@
 }
 
 .text-card {
+  font-family: Lato, serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  margin-bottom: 2rem;
+  color: #6c7482;
+}
+
+.value-card {
   font-family: Merriweather, serif;
   font-style: normal;
   font-weight: 300;

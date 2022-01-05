@@ -20,8 +20,8 @@ class Dashboard extends Component {
 
     return (
       <div className="home-padding">
-        <Header />
-        <div className="valign-wrapper center-align">
+        <Header showHeader={false} />
+        <div className="valign-wrapper center-align dashboard-position">
           <div className="container">
             <div>
               <div className="row sub-header">

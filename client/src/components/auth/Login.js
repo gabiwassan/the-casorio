@@ -66,10 +66,10 @@ class Login extends Component {
 
     return (
       <>
-        <Header />
+        <Header showHeader={true} />
         <LogoLogin />
         <div className="row">
-          <div className="col p-4">
+          <div className="col pl-4 pr-4">
             <form noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12">
                 {/*<i className="material-icons prefix">phone</i>*/}

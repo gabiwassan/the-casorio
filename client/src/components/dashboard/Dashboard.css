@@ -27,6 +27,7 @@
   font-size: 32px;
   line-height: 43px;
   color: #5C657B;
+  margin-bottom: 2rem;
 }
 
 .text-dashboard {
@@ -47,4 +48,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dashboard-position {
+  margin-top: -30%;
 }
