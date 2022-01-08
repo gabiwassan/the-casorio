@@ -1,26 +1,34 @@
 import React from 'react';
 import './../MapStyles.css';
-import ImageFooter from '../../footerLogin/FooterLogin';
 import MapHeader from '../MapHeader';
+import Header from '../../header/Header';
+import headerLight from './../../../assets/header-light.png';
+import './../../dashboard/Dashboard.css';
+import './../../layout/CardList/CardList.css';
+import FooterSection from '../../footerSection/FooterSection';
 
 const PartyMap = () => {
   return (
-    <div>
+    <div className="container">
       <MapHeader />
-      <div className="map-body">
-        <div>
-          <h5 className="text center">
-            El Salón es <b>Estancia El Rosal</b> en <b>Agua de Oro</b>.
-          </h5>
+      <Header showHeader={false} image={headerLight} />
+      <div className="row margin-section">
+        <div className="row sub-header center-align dashboard-position">
+          <p className="title-party">EL SALON</p>
+          <p className="text-dashboard mb2">
+            Los esperamos el viernes 25 de febrero a las 18:30 hs en Estancia el Rosal.
+          </p>
         </div>
-        <div>
-          <h5 className="text center">
-            Los esperamos a las <b>19hs</b> nos casamos por <b>civil</b> y ahí empieza la{' '}
-            <b>joda</b>.
-          </h5>
+
+        <div className="col m6 s12 card borders">
+          <p className="title-card">ESTANCIA EL ROSAL</p>
+          <div className="separator" />
+          <p className="text-card mb0 font18">E53, X5107</p>
+          <p className="text-card font18">Agua de Oro, Córdoba</p>
         </div>
+
         <div className="vertical-space" />
-        <div>
+        <div className="col m6 s12 card borders color-map">
           <div className="google-map-code">
             <iframe
               title="party-map"
@@ -32,8 +40,8 @@ const PartyMap = () => {
             />
           </div>
         </div>
-        <ImageFooter className="footer-image" />
       </div>
+      <FooterSection className="footer-image" />
     </div>
   );
 };

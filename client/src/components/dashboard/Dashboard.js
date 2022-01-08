@@ -5,7 +5,8 @@ import { logoutUser } from '../../actions/authActions';
 import './Dashboard.css';
 import { CardList } from '../layout/CardList/CardList';
 import Header from '../header/Header';
-import FooterLogin from '../footerLogin/FooterLogin';
+import header from './../../assets/header.png';
+
 
 //this is the invitation card
 
@@ -20,7 +21,7 @@ class Dashboard extends Component {
 
     return (
       <div className="home-padding">
-        <Header showHeader={false} />
+        <Header showHeader={false} image={header} />
         <div className="valign-wrapper center-align dashboard-position">
           <div className="container">
             <div>

@@ -1,0 +1,14 @@
+.margin-waves-top {
+  margin-top: -290px;
+}
+
+.footer-section-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 52rem;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

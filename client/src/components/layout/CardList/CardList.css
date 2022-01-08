@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.color-map {
+  background-color: rgb(236 233 226);
+}
+
 .borders-outside {
   border: 1px solid #096aa0;
   padding: 3px;
@@ -70,4 +74,8 @@
   line-height: 130%;
   color: #c9b49b;
   text-decoration: none;
+}
+
+.mb0 {
+  margin-bottom: 0;
 }

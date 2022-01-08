@@ -1,12 +1,11 @@
 import React from 'react';
-import header from './../../assets/header.png';
 import './Header.css';
 
-const Header = ({ showHeader }) => {
+const Header = ({ showHeader, image }) => {
   return (
     <div className="row">
       <div className="col s12 no-padding">
-        <img className="size-header" src={header} />
+        <img className="size-header" src={image} />
         {showHeader ? <p className="date-header"> 25 . 02 . 2022</p> : '' }
       </div>
     </div>

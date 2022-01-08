@@ -6,7 +6,7 @@ import classnames from 'classnames';
 import { NoPhoneError, QueLeDoyError } from './LoginError';
 import './Login.css';
 import ImageFooter from '../footerLogin/FooterLogin';
-import iconHome from './../../assets/icon-home.png';
+import header from './../../assets/header.png';
 import Header from '../header/Header';
 import LogoLogin from '../logo-login/LogoLogin';
 import FooterLogin from '../footerLogin/FooterLogin';
@@ -66,7 +66,7 @@ class Login extends Component {
 
     return (
       <>
-        <Header showHeader={true} />
+        <Header showHeader={true} image={header}/>
         <LogoLogin />
         <div className="row">
           <div className="col pl-4 pr-4">
@@ -97,7 +97,7 @@ class Login extends Component {
                 {errors.groupNotFound ? <QueLeDoyError /> : <></>}
               </div>
               <div className="col s12">
-                <span className="instructions">Sin el 0 y sin el 15. Ej: 3513079896</span>
+                <span className="instructions">Sin el 0 y sin el 15. Ej: 3517654165</span>
               </div>
 
               <div className="col s12">
