@@ -1,47 +1,44 @@
 import React from 'react';
-import './../MapStyles.css';
 import './Faqs.css';
 import MapHeader from '../MapHeader';
+import Header from "../../header/Header";
+import headerLight from "../../../assets/header-light.png";
+import FooterSection from "../../footerSection/FooterSection";
 
 const Faqs = () => {
   return (
-    <div className="container>">
-      <MapHeader />
-      <div className="home-padding">
-        <div className="map-body ">
-          <div className="vertical-space" />
-          <div>
-            <h1 className="text center">Preguntas frecuentes</h1>
+    <>
+      <div className="container">
+        <MapHeader/>
+        <Header showHeader={false} image={headerLight}/>
+        <div className="row margin-section center-align">
+          <div className="dashboard-position">
+            <p className="title-party">PREGUNTAS FRECUENTES</p>
           </div>
-          <div className="vertical-space" />
 
-          <div clasName="row">
-            <div className="col m12 s12 card m6">
-              <h4 className="text-header-card">¿ Y ella ?</h4>
-              <p className="text center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <h4 className="text-header-card">¿ Y la mami ?</h4>
-              <p className="text center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <h4 className="text-header-card">¿ Vahhh ?</h4>
-              <p className="text center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <h4 className="text-header-card">¿ Fi ?</h4>
-              <p className="text center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-            </div>
+          <div>
+            <p className="title-faq">¿Cuál es el código de vestimenta?</p>
+            <p className="text-card font18">👗 Formal 🎩</p>
+            <div className="separator-faq"/>
+          </div>
+
+          <div>
+            <p className="title-card">¿Debo confirmar asistencia?</p>
+            <p className="text-card font18">Si! Para confirmar la asistencia tanto en efectivo como en transferencia se
+              debe abonar antes del 01.02.2022 </p>
+            <div className="separator-faq"/>
+          </div>
+
+          <div>
+            <p className="title-card">¿Me puedo quedar a dormir en la estancia?</p>
+            <p className="text-card font18">Si, para esto necesitamos confirmación de cada uno para poder organizar los
+              lugares.</p>
+            <div className="separator-faq"/>
           </div>
         </div>
+        <FooterSection className="footer-image"/>
       </div>
-    </div>
+    </>
   );
 };
 

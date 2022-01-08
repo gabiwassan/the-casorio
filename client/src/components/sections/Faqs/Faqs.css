@@ -1,3 +1,18 @@
 .text-header-card {
   margin: 1rem;
 }
+
+.title-faq {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #6C7482;
+}
+
+.separator-faq {
+  border: 1px solid #6c74824a;
+  margin-bottom: 1rem;
+}
