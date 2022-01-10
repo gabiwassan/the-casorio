@@ -32,8 +32,11 @@ router.post('/register', (req, res) => {
       group: req.body.group,
       phone: req.body.phone,
       card: req.body.card,
-      family: req.body.family
+      family: req.body.family,
+      confirmation: req.body.confirmation,
+      message: req.body.message,
     });
+
     newUser
       .save()
       .then(user => res.json(user))

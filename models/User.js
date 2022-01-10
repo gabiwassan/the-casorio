@@ -23,6 +23,14 @@ const UserSchema = new Schema({
     type: Boolean,
     required: true,
   },
+  confirmation: {
+    type: Boolean,
+    required: true,
+  },
+  message: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now
