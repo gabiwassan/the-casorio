@@ -8,7 +8,7 @@ export const CardList = (props) => {
 
   return (
     <div clasName="row">
-      <div className="col m6 s12 card borders">
+      <div className="col s12 card borders">
         <p className="title-card">EL SALON</p>
         <div className="separator" />
         <p className="text-card font18"> Los esperamos el viernes 25 de febrero a las 18:30 hs en Estancia el Rosal.  </p>
@@ -17,7 +17,7 @@ export const CardList = (props) => {
         </Link>
       </div>
 
-      <div className="col m6 s12 card borders">
+      <div className="col s12 card borders">
         <p className="title-card">VALOR TARJETA</p>
         <div className="separator" />
         <p className="value-card font24"> ${user.card} </p>
@@ -26,7 +26,7 @@ export const CardList = (props) => {
         </Link>
       </div>
 
-      <div className="col m6 s12 card borders">
+      <div className="col s12 card borders">
         <p className="title-card">PREGUNTAS FRECUENTES</p>
         <div className="separator" />
         <p className="text-card font18"> Sacate todas las dudas aquí.  </p>

@@ -9,7 +9,7 @@ import FooterSection from '../../footerSection/FooterSection';
 
 const PartyMap = () => {
   return (
-    <div className="container">
+    <>
       <MapHeader />
       <Header showHeader={false} image={headerLight} />
       <div className="row margin-section">
@@ -42,7 +42,7 @@ const PartyMap = () => {
         </div>
       </div>
       <FooterSection className="footer-image" />
-    </div>
+    </>
   );
 };
 

@@ -5,11 +5,11 @@ import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
 import { NoPhoneError, QueLeDoyError } from './LoginError';
 import './Login.css';
-import ImageFooter from '../footerLogin/FooterLogin';
 import header from './../../assets/header.png';
 import Header from '../header/Header';
 import LogoLogin from '../logo-login/LogoLogin';
 import FooterLogin from '../footerLogin/FooterLogin';
+import dino from "../../assets/footer-dino.png";
 
 //This should be in landing
 
@@ -92,7 +92,7 @@ class Login extends Component {
                 </span>
               </div>
 
-              <div className="row error-image">
+              <div className="col s12 error-image">
                 {errors.phone ? <NoPhoneError /> : <></>}
                 {errors.groupNotFound ? <QueLeDoyError /> : <></>}
               </div>
@@ -105,6 +105,7 @@ class Login extends Component {
                   Ingresar
                 </button>
               </div>
+              <img className="footer-dino-image" src={dino} alt="dino" />
             </form>
           </div>
         </div>

@@ -10,7 +10,7 @@ import FooterSection from "../../footerSection/FooterSection";
 
 const Payment = () => {
   return (
-    <div className="container">
+    <>
       <MapHeader />
       <Header showHeader={false} image={headerLight} />
       <div className="row margin-section">
@@ -41,7 +41,7 @@ const Payment = () => {
 
       </div>
       <FooterSection className="footer-image" />
-    </div>
+    </>
   );
 };
 

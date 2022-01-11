@@ -5,7 +5,7 @@ import './FooterLogin.css';
 
 const FooterLogin = () => {
   return (
-    <div className="row no-margin">
+    <div className="row">
       <div className="col s12 no-padding margin-waves-top">
         <img className="footer-image" src={waves} alt="footer" />
         <img className="footer-dino-image" src={dino} alt="dino" />

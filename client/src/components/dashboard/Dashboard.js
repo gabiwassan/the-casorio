@@ -7,7 +7,6 @@ import { CardList } from '../layout/CardList/CardList';
 import Header from '../header/Header';
 import header from './../../assets/header.png';
 
-
 //this is the invitation card
 
 class Dashboard extends Component {
@@ -20,7 +19,7 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     return (
-      <div className="home-padding">
+      <div className="">
         <Header showHeader={false} image={header} />
         <div className="valign-wrapper center-align dashboard-position">
           <div className="container">
@@ -43,7 +42,6 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
