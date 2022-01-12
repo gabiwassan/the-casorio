@@ -6,6 +6,7 @@ import './Dashboard.css';
 import { CardList } from '../layout/CardList/CardList';
 import Header from '../header/Header';
 import header from './../../assets/header.png';
+import FooterLogin from "../footerLogin/FooterLogin";
 
 //this is the invitation card
 
@@ -42,6 +43,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
+        <FooterLogin />
       </div>
     );
   }

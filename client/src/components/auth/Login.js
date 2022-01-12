@@ -105,7 +105,6 @@ class Login extends Component {
                   Ingresar
                 </button>
               </div>
-              <img className="footer-dino-image" src={dino} alt="dino" />
             </form>
           </div>
         </div>
