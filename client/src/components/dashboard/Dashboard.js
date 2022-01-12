@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
-import './Dashboard.css';
-import { CardList } from '../layout/CardList/CardList';
+import { Champ } from '../Champ/Champ';
+import FooterLogin from '../footerLogin/FooterLogin';
 import Header from '../header/Header';
+import { CardList } from '../layout/CardList/CardList';
 import header from './../../assets/header.png';
-import FooterLogin from "../footerLogin/FooterLogin";
-
-//this is the invitation card
+import './Dashboard.css';
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {
@@ -26,7 +25,7 @@ class Dashboard extends Component {
           <div className="container">
             <div>
               <div className="row sub-header">
-                <p className="title-dashboard">{user.group}</p>
+                <Champ user={user} />
 
                 <p className="text-dashboard mb2">
                   Hay días en la vida que son especiales por sí solos. Compartirlos con las personas

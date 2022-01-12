@@ -37,7 +37,23 @@ const Faqs = () => {
           </p>
           <div className="separator-faq" />
         </div>
+
+        <div>
+          <p className="title-card">¿Hay transporte a la fiesta?</p>
+          <p className="text-card font18">
+            Si. Les dejamos 2 contactos de trafics que ya han realizado viajes hasta la estancia
+            para que puedan coordinar con ellos:
+          </p>
+          <p className="text-card mb0 font18">
+            <strong className="title-card">Diego</strong> 351 384-5589
+          </p>
+          <p className="text-card font18">
+            <strong className="title-card">Martín</strong> 351 399-4122
+          </p>
+          <div className="separator-faq" />
+        </div>
       </div>
+      <div className="vertical-space-faq"></div>
       <FooterSection className="footer-image" />
     </>
   );
