@@ -33,7 +33,7 @@ const PartyMap = () => {
             <iframe
               title="party-map"
               className="responsive-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13670.233127852205!2d-64.29085565937464!3d-31.066394197335622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94327e493e62d587%3A0x74fb360063580bd1!2sEstancia%20el%20Rosal!5e0!3m2!1ses-419!2sar!4v1640723249682!5m2!1ses-419!2sar"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.0486508757676!2d-64.29610438440345!3d-31.080573681517286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94327fcc48ce0331%3A0xe3705a77e873801c!2sEstancia%20El%20Rosal!5e0!3m2!1ses-419!2sar!4v1642006549232!5m2!1ses-419!2sar"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
