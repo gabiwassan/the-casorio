@@ -1,7 +1,6 @@
 .error-image {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 100%;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .btn {
@@ -130,4 +129,8 @@
 
 .pr-4 {
   padding-right: 2rem !important;
+}
+
+.ardilla {
+  border-radius: 100%;
 }
