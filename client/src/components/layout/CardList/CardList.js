@@ -30,7 +30,7 @@ export const CardList = (props) => {
       <div className="col s12 card borders">
         <p className="title-card">PREGUNTAS FRECUENTES</p>
         <div className="separator" />
-        <p className="text-card font18"> Sacate todas las dudas aquí.  </p>
+        <p className="text-card font18"> Sacate todas las dudas aquí. </p>
         <Link className="btn-size-card" to="/dashboard/faqs">
           <a class="btn-link-card">- VER TODAS -</a>
         </Link>
