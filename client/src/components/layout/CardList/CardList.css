@@ -66,6 +66,10 @@
   font-size: 18px;
 }
 
+.font14 {
+  font-size: 14px;
+}
+
 .btn-link-card {
   font-family: Lato, serif;
   font-style: normal;
@@ -78,4 +82,8 @@
 
 .mb0 {
   margin-bottom: 0;
+}
+
+.mb5 {
+  margin-bottom: 5px;
 }

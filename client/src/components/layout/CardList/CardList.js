@@ -20,7 +20,8 @@ export const CardList = (props) => {
       <div className="col s12 card borders">
         <p className="title-card">VALOR TARJETA</p>
         <div className="separator" />
-        <p className="value-card font24"> ${user.card} </p>
+        <p className="value-card font24 mb5"> ${user.card} </p>
+        <p className="text-card font14"> (por persona) </p>
         <Link className="btn-size-card" to="/dashboard/payment">
           <a class="btn-link-card">- VER FORMAS DE PAGO -</a>
         </Link>
