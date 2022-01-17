@@ -23,10 +23,7 @@ const Faqs = () => {
 
         <div>
           <p className="title-card">¿Debo confirmar asistencia?</p>
-          <p className="text-card font18">
-            Si! Para confirmar la asistencia tanto en efectivo como en transferencia se debe abonar
-            antes del 01.02.2022{' '}
-          </p>
+          <p className="text-card font18">Si, lo más pronto posible 😅</p>
           <div className="separator-faq" />
         </div>
 

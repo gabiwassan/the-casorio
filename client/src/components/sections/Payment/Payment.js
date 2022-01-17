@@ -1,12 +1,12 @@
 import React from 'react';
 import './../MapStyles.css';
 import './Payment.css';
-import {connect} from 'react-redux';
-import {logoutUser} from '../../../actions/authActions';
-import MapHeader from "../MapHeader";
-import Header from "../../header/Header";
-import headerLight from "../../../assets/header-light.png";
-import FooterSection from "../../footerSection/FooterSection";
+import { connect } from 'react-redux';
+import { logoutUser } from '../../../actions/authActions';
+import MapHeader from '../MapHeader';
+import Header from '../../header/Header';
+import headerLight from '../../../assets/header-light.png';
+import FooterSection from '../../footerSection/FooterSection';
 
 const Payment = () => {
   return (
@@ -25,7 +25,7 @@ const Payment = () => {
           <p className="title-card">BANCO BBVA</p>
           <div className="separator" />
           <p className="text-card mb0 font18">Gabriel Wassan</p>
-          <p className="text-card mb0 font18">CBU: XXXXX</p>
+          <p className="text-card mb0 font18">CBU: 0170247940000003651067</p>
           <p className="text-card font18">ALIAS: DINO.PERRO.GOKU</p>
         </div>
 
@@ -34,11 +34,20 @@ const Payment = () => {
         <div className="col m6 s12 card borders">
           <p className="title-card">BANCO BBVA</p>
           <div className="separator" />
-          <p className="text-card mb0 font18">Yamile Coronel</p>
-          <p className="text-card mb0 font18">CBU: XXXXX</p>
+          <p className="text-card mb0 font18">Yamile Natalia Coronel</p>
+          <p className="text-card mb0 font18">CBU: 2850301930094018180611</p>
           <p className="text-card font18">ALIAS: YAMILE.CORONEL</p>
         </div>
 
+        <div className="vertical-space" />
+
+        <div className="col m6 s12 card borders">
+          <p className="title-card">WISE USD</p>
+          <div className="separator" />
+          <p className="text-card mb0 font18">Yamile Coronel</p>
+          <p className="text-card mb0 font18">Nro. de ruta: 084009519</p>
+          <p className="text-card font18">Nro. de cuenta: 9600000000528959</p>
+        </div>
       </div>
       <FooterSection className="footer-image" />
     </>
