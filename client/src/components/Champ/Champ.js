@@ -1,5 +1,5 @@
 import React from 'react';
-import { Banquina, Chimuelo, Dany } from '../custom-champs';
+import { Banquina, Chimuelo, Dany, Jose } from '../custom-champs';
 
 const switchChamps = (user) => {
   switch (user.name) {
@@ -9,6 +9,8 @@ const switchChamps = (user) => {
       return <Banquina />;
     case 'Dany':
       return <Dany />;
+    case 'Jose':
+      return <Jose />;
     default:
       return <></>;
   }
