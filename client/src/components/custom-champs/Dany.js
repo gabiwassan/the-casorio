@@ -1,16 +1,15 @@
 import React from 'react';
 
-export const Chimuelo = () => {
+export const Dany = () => {
   return (
     <div className="container">
       <div className="col s12">
         <img
           className="champ"
-          src="https://i.pinimg.com/originals/d5/d0/a9/d5d0a947b688f74afb487e14e18f8cf6.gif"
-          alt="chimuelo"
+          src="https://c.tenor.com/_mk72pz9RPkAAAAC/jimmy-neutron.gif"
+          alt="dany"
         />
       </div>
     </div>
   );
 };
-

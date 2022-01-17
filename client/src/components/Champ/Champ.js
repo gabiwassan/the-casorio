@@ -1,16 +1,16 @@
 import React from 'react';
-import { Chimuelo } from '../custom-champs';
+import { Banquina, Chimuelo, Dany } from '../custom-champs';
 
 const switchChamps = (user) => {
   switch (user.name) {
     case 'Chimuelo':
       return <Chimuelo />;
+    case 'Banquina':
+      return <Banquina />;
+    case 'Dany':
+      return <Dany />;
     default:
-      return (
-        <>
-          <p className="title-dashboard">{user.group}</p>
-        </>
-      );
+      return <></>;
   }
 };
 

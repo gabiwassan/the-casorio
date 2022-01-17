@@ -46,7 +46,7 @@
 			]
 		},
 		{
-			"path": "client/src/components/auth/Login.js",
+			"path": "client/src/components/dashboard/Dashboard.js",
 			"bookmarks": [
 				{
 					"line": -1,
@@ -57,7 +57,7 @@
 					"column": 0
 				},
 				{
-					"line": 73,
+					"line": 27,
 					"column": 0
 				},
 				{
@@ -91,15 +91,15 @@
 			]
 		},
 		{
-			"path": "client/src/components/header/Header.js",
+			"path": "client/src/hocs/withChamp.js",
 			"bookmarks": [
 				{
 					"line": -1,
 					"column": 0
 				},
 				{
-					"line": 13,
-					"column": 2
+					"line": 4,
+					"column": 21
 				},
 				{
 					"line": -1,

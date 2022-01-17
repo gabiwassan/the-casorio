@@ -8,7 +8,7 @@ import Header from '../header/Header';
 import { CardList } from '../layout/CardList/CardList';
 import header from './../../assets/header.png';
 import './Dashboard.css';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {
@@ -24,8 +24,7 @@ class Dashboard extends Component {
         <div>
           <div className="row my-4 home-padding position-absolute">
             <div className="col left-align">
-              <Link to="/" className="btn-flat waves-effect" onClick={this.onLogoutClick}>
-              </Link>
+              <Link to="/" className="btn-flat waves-effect" onClick={this.onLogoutClick}></Link>
             </div>
           </div>
         </div>
@@ -34,6 +33,9 @@ class Dashboard extends Component {
           <div className="container">
             <div>
               <div className="row sub-header">
+                <>
+                  <p className="title-dashboard">{user.group}</p>
+                </>
                 <Champ user={user} />
 
                 <p className="text-dashboard mb2">
