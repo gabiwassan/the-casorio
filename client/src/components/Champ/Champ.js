@@ -13,6 +13,7 @@ import {
   Vakita,
   Viejo,
   Pelado,
+  Ivan,
 } from '../custom-champs';
 
 const switchChamps = (user) => {
@@ -43,6 +44,8 @@ const switchChamps = (user) => {
       return <Viejo />;
     case 'Pelado':
       return <Pelado />;
+    case 'Ivan':
+      return <Ivan />;
     default:
       return <></>;
   }

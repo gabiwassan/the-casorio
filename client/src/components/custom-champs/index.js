@@ -11,3 +11,4 @@ export * from './Fede';
 export * from './Vakita';
 export * from './Viejo';
 export * from './Pelado';
+export * from './Ivan';
