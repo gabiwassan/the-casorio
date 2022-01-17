@@ -13,3 +13,4 @@ export * from './Viejo';
 export * from './Pelado';
 export * from './Ivan';
 export * from './Gaston';
+export * from './Solido';

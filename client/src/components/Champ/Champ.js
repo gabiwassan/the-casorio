@@ -15,6 +15,7 @@ import {
   Pelado,
   Ivan,
   Gaston,
+  Solido,
 } from '../custom-champs';
 
 const switchChamps = (user) => {
@@ -49,6 +50,8 @@ const switchChamps = (user) => {
       return <Ivan />;
     case 'Gaston':
       return <Gaston />;
+    case 'Solido':
+      return <Solido />;
     default:
       return <></>;
   }
