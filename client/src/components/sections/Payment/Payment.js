@@ -35,7 +35,7 @@ const Payment = () => {
           <p className="title-card">BANCO BBVA</p>
           <div className="separator" />
           <p className="text-card mb0 font18">Yamile Coronel</p>
-          <p className="text-card mb0 font18">CBU: 2850301930094018180611</p>
+          <p className="text-card mb0 font18">CBU: 0170247940000003689453</p>
           <p className="text-card font18">ALIAS: YAMILE.CORONEL</p>
         </div>
 
